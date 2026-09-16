@@ -1,9 +1,468 @@
-import React from 'react'
+import React from "react";
+import {
+  FiPhone,
+  FiMail,
+  FiMapPin,
+  FiArrowRight,
+  FiCheckCircle,
+  FiTool,
+  FiHome,
+  FiTruck,
+  FiMonitor,
+  FiZap,
+  FiDroplet,
+  FiShield,
+  FiStar,
+  FiClock,
+  FiUsers
+} from "react-icons/fi";
 
-const Homee = () => {
+import "./CSS/Home.css";
+import Header from "../Components/Header";
+
+const Home = () => {
+  const services = [
+    {
+      icon: <FiTool />,
+      title: "Plumbing Services",
+      text: "Professional plumbing solutions for homes and businesses."
+    },
+    {
+      icon: <FiZap />,
+      title: "Electrical Services",
+      text: "Safe and reliable electrical services by skilled professionals."
+    },
+    {
+      icon: <FiHome />,
+      title: "Home Services",
+      text: "Complete home maintenance and repair services."
+    },
+    {
+      icon: <FiTruck />,
+      title: "Vehicle Services",
+      text: "Convenient bike and car service at your preferred location."
+    },
+    {
+      icon: <FiMonitor />,
+      title: "Tech Services",
+      text: "Computer, laptop and other technology support services."
+    },
+    {
+      icon: <FiDroplet />,
+      title: "Cleaning Services",
+      text: "Professional cleaning solutions for a cleaner space."
+    }
+  ];
+
+  const features = [
+    {
+      icon: <FiShield />,
+      title: "Verified Professionals",
+      text: "Connect with trusted and verified service providers."
+    },
+    {
+      icon: <FiClock />,
+      title: "Quick Service",
+      text: "Find and book the service you need without wasting time."
+    },
+    {
+      icon: <FiUsers />,
+      title: "Easy Booking",
+      text: "Simple booking process designed for everyone."
+    }
+  ];  
+
   return (
-    <div>Homee</div>
-  )
-}
+    <>
+    <Header/>
+    <div className="careflow-home">
+      {/* Hero */}
+      <section className="careflow-hero" id="home">
+        <div className="careflow-hero-content">
 
-export default Homee
+          <div className="careflow-badge">
+            <FiCheckCircle />
+            Trusted Service Platform
+          </div>
+
+          <h1>
+            Your Everyday Services,
+            <span> Made Simple.</span>
+          </h1>
+
+          <p>
+            Find trusted professionals for your home, vehicle, technology
+            and everyday service needs — all in one place.
+          </p>
+
+          <div className="careflow-hero-buttons">
+            <button className="careflow-primary-btn">
+              Explore Services <FiArrowRight />
+            </button>
+
+            <button className="careflow-secondary-btn">
+              Become a Provider
+            </button>
+          </div>
+
+          <div className="careflow-trust">
+            <div className="careflow-trust-stars">
+              <FiStar />
+              <FiStar />
+              <FiStar />
+              <FiStar />
+              <FiStar />
+            </div>
+
+            <p>Trusted by customers for reliable services</p>
+          </div>
+
+        </div>
+
+        <div className="careflow-hero-card">
+
+          {/* <div className="careflow-floating-card careflow-card-one">
+            <FiCheckCircle />
+            <div>
+              <strong>Service Booked</strong>
+              <small>Professional assigned</small>
+            </div>
+          </div> */}
+
+          <div className="careflow-hero-image">
+            <div className="careflow-image-overlay">
+              <span>Professional Services</span>
+              <h3>Help is just a booking away.</h3>
+            </div>
+          </div>
+
+          {/* <div className="careflow-floating-card careflow-card-two">
+            <div className="careflow-avatar">CF</div>
+            <div>
+              <strong>Verified Provider</strong>
+              <small>Available near you</small>
+            </div>
+          </div> */}
+
+        </div>
+      </section>
+
+      {/* About */}
+      <section className="careflow-about" id="about">
+
+        <div className="careflow-about-image">
+          <div className="careflow-about-box">
+            <strong>10K+</strong>
+            <span>Services Completed</span>
+          </div>
+        </div>
+
+        <div className="careflow-about-content">
+
+          <span className="careflow-section-label">ABOUT CAREFLOW</span>
+
+          <h2>
+            Making Everyday Services
+            <span> Simple, Fast & Reliable.</span>
+          </h2>
+
+          <p>
+            CareFlow is an online service platform that helps customers
+            discover, compare and book trusted professionals for their
+            everyday needs.
+          </p>
+
+          <p>
+            From home repairs to vehicle services and technology support,
+            CareFlow brings different services together on one convenient
+            platform.
+          </p>
+
+          <div className="careflow-check-list">
+            <div>
+              <FiCheckCircle />
+              <span>Trusted Service Providers</span>
+            </div>
+
+            <div>
+              <FiCheckCircle />
+              <span>Simple & Easy Booking</span>
+            </div>
+
+            <div>
+              <FiCheckCircle />
+              <span>Reliable Customer Support</span>
+            </div>
+          </div>
+
+          <button className="careflow-primary-btn">
+            Learn More <FiArrowRight />
+          </button>
+
+        </div>
+      </section>
+
+      {/* Services */}
+      <section className="careflow-services" id="services">
+
+        <div className="careflow-section-heading">
+          <span className="careflow-section-label">OUR SERVICES</span>
+
+          <h2>
+            Services You Can
+            <span> Count On.</span>
+          </h2>
+
+          <p>
+            Whatever you need, find the right professional for the job.
+          </p>
+        </div>
+
+        <div className="careflow-service-grid">
+
+          {services.map((service, index) => (
+            <div className="careflow-service-card" key={index}>
+
+              <div className="careflow-service-icon">
+                {service.icon}
+              </div>
+
+              <h3>{service.title}</h3>
+
+              <p>{service.text}</p>
+
+              <a href="#contact">
+                Explore Service <FiArrowRight />
+              </a>
+
+            </div>
+          ))}
+
+        </div>
+
+        <div className="careflow-services-btn">
+          <button className="careflow-outline-btn">
+            View All Services <FiArrowRight />
+          </button>
+        </div>
+
+      </section>
+
+      {/* Why CareFlow */}
+      <section className="careflow-why">
+
+        <div className="careflow-section-heading">
+          <span className="careflow-section-label">WHY CAREFLOW</span>
+
+          <h2>
+            Everything You Need,
+            <span> In One Place.</span>
+          </h2>
+
+          <p>
+            We make finding and booking everyday services easier.
+          </p>
+        </div>
+
+        <div className="careflow-feature-grid">
+
+          {features.map((feature, index) => (
+            <div className="careflow-feature-card" key={index}>
+
+              <div className="careflow-feature-icon">
+                {feature.icon}
+              </div>
+
+              <h3>{feature.title}</h3>
+
+              <p>{feature.text}</p>
+
+            </div>
+          ))}
+
+        </div>
+
+      </section>
+
+      {/* How It Works */}
+      <section className="careflow-process" id="how-it-works">
+
+        <div className="careflow-section-heading">
+          <span className="careflow-section-label">HOW IT WORKS</span>
+
+          <h2>
+            Getting Help Is
+            <span> Easy.</span>
+          </h2>
+
+          <p>
+            Book your required service in just a few simple steps.
+          </p>
+        </div>
+
+        <div className="careflow-process-grid">
+
+          <div className="careflow-process-card">
+            <span>01</span>
+            <h3>Choose a Service</h3>
+            <p>
+              Select the service you need from our wide range of categories.
+            </p>
+          </div>
+
+          <div className="careflow-process-card">
+            <span>02</span>
+            <h3>Choose a Provider</h3>
+            <p>
+              Find a suitable professional according to your requirements.
+            </p>
+          </div>
+
+          <div className="careflow-process-card">
+            <span>03</span>
+            <h3>Book Your Service</h3>
+            <p>
+              Select a convenient time and confirm your booking.
+            </p>
+          </div>
+
+          <div className="careflow-process-card">
+            <span>04</span>
+            <h3>Get It Done</h3>
+            <p>
+              Your professional arrives and completes the requested service.
+            </p>
+          </div>
+
+        </div>
+
+      </section>
+
+      {/* Stats */}
+      <section className="careflow-stats">
+
+        <div>
+          <strong>10K+</strong>
+          <span>Services Completed</span>
+        </div>
+
+        <div>
+          <strong>2K+</strong>
+          <span>Verified Providers</span>
+        </div>
+
+        <div>
+          <strong>15K+</strong>
+          <span>Happy Customers</span>
+        </div>
+
+        <div>
+          <strong>25+</strong>
+          <span>Service Categories</span>
+        </div>
+
+      </section>
+
+      {/* CTA */}
+      {/* <section className="careflow-cta">
+
+        <div>
+          <span className="careflow-section-label">NEED A SERVICE?</span>
+
+          <h2>
+            Let CareFlow Take
+            <span> Care of It.</span>
+          </h2>
+
+          <p>
+            Find the right professional and get your service booked today.
+          </p>
+        </div>
+
+        <button className="careflow-white-btn">
+          Find a Service <FiArrowRight />
+        </button>
+
+      </section> */}
+
+      {/* Footer */}
+      <footer className="careflow-footer" id="contact">
+
+        <div className="careflow-footer-main">
+
+          <div className="careflow-footer-about">
+
+            <div className="careflow-logo">
+              Care<span>Flow</span>
+            </div>
+
+            <p>
+              Making everyday services simple, fast and reliable.
+              Find trusted professionals whenever you need them.
+            </p>
+
+            <div className="careflow-socials">
+              <span>f</span>
+              <span>in</span>
+              <span>ig</span>
+              <span>x</span>
+            </div>
+
+          </div>
+
+          <div className="careflow-footer-column">
+            <h3>Company</h3>
+            <a href="#about">About Us</a>
+            <a href="#services">Services</a>
+            <a href="#how-it-works">How It Works</a>
+            <a href="#contact">Contact</a>
+          </div>
+
+          <div className="careflow-footer-column">
+            <h3>Services</h3>
+            <a href="#services">Home Services</a>
+            <a href="#services">Vehicle Services</a>
+            <a href="#services">Tech Services</a>
+            <a href="#services">Cleaning Services</a>
+          </div>
+
+          <div className="careflow-footer-column careflow-contact-column">
+
+            <h3>Contact Us</h3>
+
+            <p>
+              <FiMapPin />
+              Mirzapur, Uttar Pradesh, India
+            </p>
+
+            <p>
+              <FiPhone />
+              +91 98765 43210
+            </p>
+
+            <p>
+              <FiMail />
+              support@careflow.com
+            </p>
+
+          </div>
+
+        </div>
+
+        <div className="careflow-footer-bottom">
+          <p>© 2026 CareFlow. All rights reserved.</p>
+
+          <div>
+            <a href="#privacy">Privacy Policy</a>
+            <a href="#terms">Terms & Conditions</a>
+          </div>
+        </div>
+
+      </footer>
+
+    </div>
+    </>
+  );
+};
+
+export default Home;

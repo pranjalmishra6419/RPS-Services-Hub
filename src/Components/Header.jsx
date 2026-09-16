@@ -1,28 +1,73 @@
-import React from 'react'
-import {NavLink} from 'react-router-dom'
-import './Css/Header.css'
+import React from "react";
+import { NavLink } from "react-router-dom";
+import "./Css/Header.css";
 
 const Header = () => {
   return (
-    <>
-        <div className="header-outer">
-            <div className="header-logo">
-                <img src="/image/logo.jpg" alt="hello" />
-            </div>
-            <ul>
-                <NavLink className={({isActive})=>`navlink ${isActive? "navActive":""}`} to='/'><li>Home</li></NavLink>
-                <NavLink className={({isActive})=>`navlink ${isActive? "navActive":""}`}><li>About</li></NavLink>
-                <NavLink className={({isActive})=>`navlink ${isActive? "navActive":""}`}><li>Services</li></NavLink>
-                <NavLink className={({isActive})=>`navlink ${isActive? "navActive":""}`}><li>Calculators</li></NavLink>
-                <NavLink className={({isActive})=>`navlink ${isActive? "navActive":""}`}><li>Contact</li></NavLink>
-            </ul>
-            <div className="header-search">
-                <input type="search" placeholder='Search Your.........' />
-            </div>
-            <button>Login/Signup</button>
-        </div>
-    </>
-  )
-}
+    <header className="servicehub-header">
 
-export default Header
+      {/* Logo */}
+      <div className="servicehub-logo">
+        <span>Services</span> Hub
+      </div>
+
+      {/* Navigation */}
+      <nav className="servicehub-nav">
+
+        <NavLink
+          to="/"
+          className={({ isActive }) =>
+            `servicehub-link ${isActive ? "servicehub-active" : ""}`
+          }
+        >
+          Home
+        </NavLink>
+        
+
+        <NavLink
+          to="/about"
+          className={({ isActive }) =>
+            `servicehub-link ${isActive ? "servicehub-active" : ""}`
+          }
+        >
+          About
+        </NavLink>
+        <NavLink
+          to="/about"
+          className={({ isActive }) =>
+            `servicehub-link ${isActive ? "servicehub-active" : ""}`
+          }
+        >
+          About
+        </NavLink>
+
+        <NavLink
+          to="/services"
+          className={({ isActive }) =>
+            `servicehub-link ${isActive ? "servicehub-active" : ""}`
+          }
+        >
+          Services
+        </NavLink>
+
+        <NavLink
+          to="/blog"
+          className={({ isActive }) =>
+            `servicehub-link ${isActive ? "servicehub-active" : ""}`
+          }
+        >
+          Blog
+        </NavLink>
+
+      </nav>
+
+      {/* Login Button */}
+      <button className="servicehub-login">
+        Login / Signup
+      </button>
+
+    </header>
+  );
+};
+
+export default Header;
