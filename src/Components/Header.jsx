@@ -24,14 +24,7 @@ const Header = () => {
         </NavLink>
         
 
-        <NavLink
-          to="/about"
-          className={({ isActive }) =>
-            `servicehub-link ${isActive ? "servicehub-active" : ""}`
-          }
-        >
-          About
-        </NavLink>
+        
         <NavLink
           to="/about"
           className={({ isActive }) =>
@@ -59,11 +52,20 @@ const Header = () => {
           Blog
         </NavLink>
 
+        <NavLink
+          to="/about"
+          className={({ isActive }) =>
+            `servicehub-link ${isActive ? "servicehub-active" : ""}`
+          }
+        >
+          Contact
+        </NavLink>
+
       </nav>
 
       {/* Login Button */}
       <button className="servicehub-login">
-        Login / Signup
+        Login
       </button>
 
     </header>

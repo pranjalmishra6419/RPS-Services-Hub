@@ -9,20 +9,11 @@ const SubServicesHeader = () => {
 
       <div className="service-subnav-links">
         <NavLink to="/home-services">Home Services</NavLink>
-        <NavLink to="/vehicle-services">Vehicle Services</NavLink>
-        <NavLink to="/tech-services">Tech Services</NavLink>
-        <NavLink to="/repair-services">Repair Services</NavLink>
-        <NavLink to="/cleaning-services">Cleaning Services</NavLink>
-        <NavLink to="/personal-care">Personal Care</NavLink>
-        <NavLink to="/personal-care">Moving And Shifting</NavLink>
-      </div>
-
-      <div className="service-subnav-search">
-        <FiSearch />
-        <input
-          type="search"
-          placeholder="Search services..."
-        />
+        <NavLink to="/vehicle-services">Plumbing Services</NavLink>
+        <NavLink to="/tech-services">Electrical Services</NavLink>
+        <NavLink to="/repair-services">Vehicle Services</NavLink>
+        <NavLink to="/cleaning-services">Tech Services</NavLink>
+        <NavLink to="/personal-care">Cleaning Services</NavLink>
       </div>
 
     </div>

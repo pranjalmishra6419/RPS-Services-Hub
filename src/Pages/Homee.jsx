@@ -19,6 +19,10 @@ import {
 
 import "./CSS/Home.css";
 import Header from "../Components/Header";
+import RequestToCall from "../Components/RequestToCall"
+import Footer from "../Components/Footer";
+import SubServicesHeader from "../Components/SubServicesHeader";
+import AboutCounter from "../Components/AboutCounter";
 
 const Home = () => {
   const services = [
@@ -338,128 +342,14 @@ const Home = () => {
 
       </section>
 
-      {/* Stats */}
-      <section className="careflow-stats">
+      
 
-        <div>
-          <strong>10K+</strong>
-          <span>Services Completed</span>
-        </div>
+      
+      <RequestToCall/>
+      <AboutCounter/>
+          <Footer/>
 
-        <div>
-          <strong>2K+</strong>
-          <span>Verified Providers</span>
-        </div>
-
-        <div>
-          <strong>15K+</strong>
-          <span>Happy Customers</span>
-        </div>
-
-        <div>
-          <strong>25+</strong>
-          <span>Service Categories</span>
-        </div>
-
-      </section>
-
-      {/* CTA */}
-      {/* <section className="careflow-cta">
-
-        <div>
-          <span className="careflow-section-label">NEED A SERVICE?</span>
-
-          <h2>
-            Let CareFlow Take
-            <span> Care of It.</span>
-          </h2>
-
-          <p>
-            Find the right professional and get your service booked today.
-          </p>
-        </div>
-
-        <button className="careflow-white-btn">
-          Find a Service <FiArrowRight />
-        </button>
-
-      </section> */}
-
-      {/* Footer */}
-      <footer className="careflow-footer" id="contact">
-
-        <div className="careflow-footer-main">
-
-          <div className="careflow-footer-about">
-
-            <div className="careflow-logo">
-              Care<span>Flow</span>
-            </div>
-
-            <p>
-              Making everyday services simple, fast and reliable.
-              Find trusted professionals whenever you need them.
-            </p>
-
-            <div className="careflow-socials">
-              <span>f</span>
-              <span>in</span>
-              <span>ig</span>
-              <span>x</span>
-            </div>
-
-          </div>
-
-          <div className="careflow-footer-column">
-            <h3>Company</h3>
-            <a href="#about">About Us</a>
-            <a href="#services">Services</a>
-            <a href="#how-it-works">How It Works</a>
-            <a href="#contact">Contact</a>
-          </div>
-
-          <div className="careflow-footer-column">
-            <h3>Services</h3>
-            <a href="#services">Home Services</a>
-            <a href="#services">Vehicle Services</a>
-            <a href="#services">Tech Services</a>
-            <a href="#services">Cleaning Services</a>
-          </div>
-
-          <div className="careflow-footer-column careflow-contact-column">
-
-            <h3>Contact Us</h3>
-
-            <p>
-              <FiMapPin />
-              Mirzapur, Uttar Pradesh, India
-            </p>
-
-            <p>
-              <FiPhone />
-              +91 98765 43210
-            </p>
-
-            <p>
-              <FiMail />
-              support@careflow.com
-            </p>
-
-          </div>
-
-        </div>
-
-        <div className="careflow-footer-bottom">
-          <p>© 2026 CareFlow. All rights reserved.</p>
-
-          <div>
-            <a href="#privacy">Privacy Policy</a>
-            <a href="#terms">Terms & Conditions</a>
-          </div>
-        </div>
-
-      </footer>
-
+                            
     </div>
     </>
   );

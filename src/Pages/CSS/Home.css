@@ -1,13 +1,20 @@
-/* =====================================================
-   SERVICES HUB - COMPLETE RESPONSIVE CSS
-   COLORS:
-   White      #FFFFFF
-   Black      #000000
-   Dark       #0D182B
-   Dark Blue  #16243C
-   Green      #059669
-   Light      #F4F7FB
-===================================================== */
+
+/* =========================================================
+   CAREFLOW - COMPLETE HOME PAGE CSS
+   Updated Dark Color Palette
+
+   Deep Teal : #12343B
+   Teal Dark  : #1A454A
+   Teal Hover : #20565A
+   Emerald    : #10B981
+   Green      : #059669
+   Light      : #F8FAFC
+   White      : #FFFFFF
+   Text       : #334155
+   Muted      : #64748B
+   background navbar : #d7d4d4
+   
+========================================================= */
 
 html {
   scroll-behavior: smooth;
@@ -21,8 +28,8 @@ html {
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background: #ffffff;
-  color: #000000;
+  background: #FFFFFF;
+  color: #12343B;
 }
 
 .careflow-home {
@@ -30,9 +37,9 @@ body {
   overflow: hidden;
 }
 
-/* =====================================================
+/* =========================================================
    ANIMATIONS
-===================================================== */
+========================================================= */
 
 @keyframes careflowFadeUp {
   from {
@@ -83,27 +90,26 @@ body {
 
 @keyframes careflowPulse {
   0% {
-    box-shadow: 0 0 0 0 rgba(5, 150, 105, 0.35);
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.35);
   }
 
   70% {
-    box-shadow: 0 0 0 12px rgba(5, 150, 105, 0);
+    box-shadow: 0 0 0 12px rgba(16, 185, 129, 0);
   }
 
   100% {
-    box-shadow: 0 0 0 0 rgba(5, 150, 105, 0);
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
   }
 }
 
-/* =====================================================
+/* =========================================================
    HERO
-===================================================== */
+========================================================= */
 
 .careflow-hero {
-  min-height: 650px;
+  min-height: 400px;
   padding: 75px 7%;
-  background: #0D182B;
-
+  background: #ffffff;
   display: grid;
   grid-template-columns: 1fr 0.9fr;
   gap: 70px;
@@ -111,52 +117,43 @@ body {
 }
 
 .careflow-hero-content {
-  max-width: 650px;
+  max-width: 500px;
   animation: careflowFadeLeft 0.8s ease forwards;
 }
 
 .careflow-badge {
   width: fit-content;
-
   display: flex;
   align-items: center;
   gap: 8px;
-
-  padding: 9px 14px;
+  padding: 9px 15px;
   border-radius: 30px;
-
-  background: #16243C;
-  color: #059669;
-
+  background: #1A454A;
+  color: #10B981;
   font-size: 13px;
   font-weight: 700;
-
   margin-bottom: 23px;
-
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(16, 185, 129, 0.2);
 }
 
 .careflow-hero h1 {
   font-size: clamp(45px, 5vw, 68px);
   line-height: 1.08;
   letter-spacing: -2px;
-
-  color: #ffffff;
+  color: #000000;
 }
 
 .careflow-hero h1 span {
-  color: #059669;
+  color: #10B981;
 }
 
 .careflow-hero p {
   margin-top: 25px;
   max-width: 570px;
-
   font-size: 18px;
   line-height: 1.7;
-
-  color: #ffffff;
-  opacity: 0.75;
+  color: #000000;
+  opacity: 0.72;
 }
 
 .careflow-hero-buttons {
@@ -166,147 +163,123 @@ body {
 }
 
 .careflow-primary-btn {
-  padding: 15px 23px;
-
+  padding: 15px 24px;
   border-radius: 8px;
-  background: #059669;
-
-  border: 1px solid #059669;
-
-  color: #ffffff;
-
+  background: #10B981;
+  border: 1px solid #10B981;
+  color: black;
   font-size: 15px;
   font-weight: 700;
-
   cursor: pointer;
-
   transition: 0.3s ease;
+  box-shadow: 0 8px 20px rgba(16, 185, 129, 0.18);
 }
 
 .careflow-primary-btn:hover {
-  background: #ffffff;
-  color: #059669;
+  background: #059669;
+  border-color: #059669;
   transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(16, 185, 129, 0.25);
 }
 
 .careflow-secondary-btn {
-  padding: 15px 23px;
-
+  padding: 15px 24px;
   border-radius: 8px;
-
   background: transparent;
-  color: #ffffff;
-
-  border: 1px solid #ffffff;
-
+  color: #FFFFFF;
+  border: 1px solid rgba(255, 255, 255, 0.5);
   font-size: 15px;
   font-weight: 700;
-
   cursor: pointer;
-
   transition: 0.3s ease;
 }
 
 .careflow-secondary-btn:hover {
-  background: #ffffff;
-  color: #0D182B;
+  background: #FFFFFF;
+  color: #12343B;
+  border-color: #FFFFFF;
   transform: translateY(-3px);
 }
 
 .careflow-trust {
   margin-top: 35px;
   font-weight: bold;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 .careflow-trust-stars {
   display: flex;
   gap: 4px;
-
   font-weight: bold;
-  color: #059669;
+  color: #10B981;
 }
 
 .careflow-trust p {
   margin-top: 7px;
-
   font-size: 13px;
-  color: #ffffff;
-  opacity: 0.65;
+  color: #FFFFFF;
+  opacity: 0.6;
 }
 
-/* =====================================================
+/* =========================================================
    HERO IMAGE
-===================================================== */
+========================================================= */
 
 .careflow-hero-card {
   position: relative;
   min-height: 580px;
-
   animation: careflowFadeRight 0.8s ease forwards;
 }
 
 .careflow-hero-image {
   width: 100%;
   height: 570px;
-
   border-radius: 22px;
 
   background:
     linear-gradient(
-      rgba(13, 24, 43, 0.15),
-      rgba(13, 24, 43, 0.75)
+      rgba(18, 52, 59, 0.15),
+      rgba(18, 52, 59, 0.78)
     ),
-    url("/image/logo.jpg") center / cover;
+    url("/image/raf7.jpg") center / cover;
 
   position: relative;
   overflow: hidden;
-
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .careflow-image-overlay {
   position: absolute;
-
   bottom: 35px;
   left: 35px;
   right: 35px;
-
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 .careflow-image-overlay span {
   font-size: 13px;
-
   text-transform: uppercase;
   letter-spacing: 2px;
-
-  color: #059669;
+  color: #10B981;
   font-weight: 700;
 }
 
 .careflow-image-overlay h3 {
   margin-top: 10px;
   font-size: 29px;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 .careflow-floating-card {
   position: absolute;
   z-index: 2;
-
-  background: #ffffff;
-
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
-
-  border-radius: 12px;
-
+  background: #FFFFFF;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.25);
+  border-radius: 13px;
   padding: 15px;
-
   display: flex;
   align-items: center;
   gap: 12px;
-
   animation: careflowFloat 3s ease-in-out infinite;
 }
 
@@ -322,12 +295,12 @@ body {
 
 .careflow-floating-card strong {
   font-size: 13px;
-  color: #0D182B;
+  color: #12343B;
 }
 
 .careflow-floating-card small {
   margin-top: 4px;
-  color: #16243C;
+  color: #64748B;
 }
 
 .careflow-card-one {
@@ -338,53 +311,42 @@ body {
 .careflow-card-two {
   right: -30px;
   bottom: 45px;
-
   animation-delay: 1s;
 }
 
 .careflow-avatar {
   width: 42px;
   height: 42px;
-
   border-radius: 50%;
-
   display: grid;
   place-items: center;
-
-  background: #059669;
-  color: #ffffff;
-
+  background: #10B981;
+  color: #FFFFFF;
   font-weight: 800;
 }
 
-/* =====================================================
+/* =========================================================
    COMMON SECTION
-===================================================== */
+========================================================= */
 
 .careflow-section-label {
   color: #059669;
-
   font-size: 13px;
   font-weight: 800;
-
   letter-spacing: 2px;
 }
 
 .careflow-section-heading {
   text-align: center;
-
   max-width: 700px;
-
   margin: 0 auto 50px;
 }
 
 .careflow-section-heading h2 {
   margin-top: 12px;
-
   font-size: 42px;
   line-height: 1.2;
-
-  color: #0D182B;
+  color: #12343B;
 }
 
 .careflow-section-heading h2 span {
@@ -393,65 +355,50 @@ body {
 
 .careflow-section-heading p {
   margin-top: 14px;
-
-  color: #16243C;
-
-  line-height: 1.6;
-  opacity: 0.75;
+  color: #64748B;
+  line-height: 1.7;
 }
 
-/* =====================================================
+/* =========================================================
    ABOUT
-===================================================== */
+========================================================= */
 
 .careflow-about {
   padding: 100px 7%;
-
   display: grid;
   grid-template-columns: 0.9fr 1fr;
-
   gap: 80px;
-
   align-items: center;
-
-  background: #ffffff;
+  background: #FFFFFF;
 }
 
 .careflow-about-image {
   height: 500px;
-
   border-radius: 20px;
 
   background:
     linear-gradient(
-      rgba(13, 24, 43, 0.05),
-      rgba(13, 24, 43, 0.3)
+      rgba(18, 52, 59, 0.05),
+      rgba(18, 52, 59, 0.3)
     ),
     url("https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=900&q=80")
-      center / cover;
+    center / cover;
 
   position: relative;
-
   animation: careflowFadeLeft 0.8s ease forwards;
 }
 
 .careflow-about-box {
   position: absolute;
-
   bottom: 25px;
   right: -25px;
-
   background: #059669;
-
-  color: #ffffff;
-
+  color: #FFFFFF;
   padding: 22px 28px;
-
-  border-radius: 10px;
-
+  border-radius: 12px;
   text-align: center;
-
   animation: careflowFloat 3s ease-in-out infinite;
+  box-shadow: 0 15px 35px rgba(5, 150, 105, 0.25);
 }
 
 .careflow-about-box strong,
@@ -474,11 +421,9 @@ body {
 
 .careflow-about-content h2 {
   margin-top: 13px;
-
   font-size: 43px;
   line-height: 1.2;
-
-  color: #0D182B;
+  color: #12343B;
 }
 
 .careflow-about-content h2 span {
@@ -487,12 +432,8 @@ body {
 
 .careflow-about-content > p {
   margin-top: 20px;
-
-  color: #16243C;
-
+  color: #64748B;
   line-height: 1.7;
-
-  opacity: 0.7;
 }
 
 .careflow-check-list {
@@ -502,13 +443,9 @@ body {
 .careflow-check-list div {
   display: flex;
   align-items: center;
-
   gap: 10px;
-
   margin: 12px 0;
-
-  color: #0D182B;
-
+  color: #334155;
   font-weight: 600;
 }
 
@@ -516,119 +453,97 @@ body {
   color: #059669;
 }
 
-/* =====================================================
+/* =========================================================
    SERVICES
-===================================================== */
+========================================================= */
 
 .careflow-services {
   padding: 100px 7%;
-  background: #F4F7FB;
+  background: #F8FAFC;
 }
 
 .careflow-service-grid {
   display: grid;
-
   grid-template-columns: repeat(3, 1fr);
-
   gap: 23px;
 }
 
 .careflow-service-card {
   padding: 30px;
-
-  background: #ffffff;
-
-  border: 1px solid rgba(13, 24, 43, 0.08);
-
-  border-radius: 14px;
-
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 15px;
   transition: 0.35s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.careflow-service-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: #10B981;
+  transition: 0.35s ease;
+}
+
+.careflow-service-card:hover::before {
+  width: 100%;
 }
 
 .careflow-service-card:hover {
   transform: translateY(-8px);
-
-  background: #16243C;
-
-  box-shadow: 0 18px 40px rgba(13, 24, 43, 0.15);
+  border-color: rgba(16, 185, 129, 0.25);
+  box-shadow: 0 18px 40px rgba(18, 52, 59, 0.1);
 }
 
 .careflow-service-icon {
   width: 58px;
   height: 58px;
-
   display: grid;
   place-items: center;
-
   border-radius: 12px;
-
-  background: #F4F7FB;
-
+  background: #ECFDF5;
   color: #059669;
-
   font-size: 26px;
-
   transition: 0.3s ease;
 }
 
 .careflow-service-card:hover .careflow-service-icon {
   background: #059669;
-  color: #ffffff;
+  color: #FFFFFF;
+  transform: scale(1.08);
 }
 
 .careflow-service-card h3 {
   margin-top: 20px;
-
-  color: #0D182B;
-
+  color: #12343B;
   font-size: 20px;
-
-  transition: 0.3s ease;
-}
-
-.careflow-service-card:hover h3 {
-  color: #ffffff;
 }
 
 .careflow-service-card p {
   margin-top: 12px;
-
-  color: #16243C;
-
+  color: #64748B;
   line-height: 1.6;
-
-  opacity: 0.7;
-
-  transition: 0.3s ease;
-}
-
-.careflow-service-card:hover p {
-  color: #ffffff;
-  opacity: 0.75;
 }
 
 .careflow-service-card a {
   display: flex;
   align-items: center;
-
   gap: 7px;
-
   margin-top: 20px;
-
   text-decoration: none;
-
   color: #059669;
-
   font-size: 14px;
-
   font-weight: 700;
-
   transition: 0.3s ease;
 }
 
-.careflow-service-card:hover a {
-  color: #ffffff;
-  transform: translateX(4px);
+.careflow-service-card a:hover {
+  color: #12343B;
+  transform: translateX(5px);
 }
 
 .careflow-services-btn {
@@ -637,182 +552,145 @@ body {
 }
 
 .careflow-outline-btn {
-  padding: 14px 23px;
-
-  background: #0D182B;
-
-  color: #ffffff;
-
-  border: 1px solid #0D182B;
-
-  border-radius: 7px;
-
+  padding: 14px 25px;
+  background: #12343B;
+  color: #FFFFFF;
+  border: 1px solid #12343B;
+  border-radius: 8px;
   cursor: pointer;
-
+  font-weight: 700;
   transition: 0.3s ease;
 }
 
 .careflow-outline-btn:hover {
   background: #059669;
   border-color: #059669;
-
   transform: translateY(-3px);
 }
 
-/* =====================================================
-   WHY
-===================================================== */
+/* =========================================================
+   WHY CHOOSE US
+========================================================= */
 
 .careflow-why {
   padding: 100px 7%;
-
-  background: #ffffff;
+  background: #FFFFFF;
 }
 
 .careflow-feature-grid {
   display: grid;
-
   grid-template-columns: repeat(3, 1fr);
-
   gap: 30px;
 }
 
 .careflow-feature-card {
   text-align: center;
-
   padding: 35px;
-
   border-radius: 15px;
-
+  background-color: #d7d4d4;
   transition: 0.3s ease;
 }
 
 .careflow-feature-card:hover {
-  background: #F4F7FB;
+  background: #e2e9ea;
   transform: translateY(-7px);
 }
 
 .careflow-feature-icon {
   width: 70px;
   height: 70px;
-
   margin: auto;
-
   display: grid;
   place-items: center;
-
-  background: #16243C;
-
+  background: #ECFDF5;
   color: #059669;
-
   border-radius: 50%;
-
   font-size: 28px;
   font-weight: bold;
-
   transition: 0.3s ease;
 }
 
 .careflow-feature-card:hover .careflow-feature-icon {
   background: #059669;
-  color: #ffffff;
-
+  color: #FFFFFF;
   animation: careflowPulse 1.5s infinite;
 }
 
 .careflow-feature-card h3 {
   margin-top: 20px;
-
-  color: #0D182B;
+  color: #12343B;
 }
 
 .careflow-feature-card p {
   margin-top: 10px;
-
-  color: #16243C;
-
+  color: #64748B;
   line-height: 1.6;
-
-  opacity: 0.7;
 }
 
-/* =====================================================
+/* =========================================================
    PROCESS
-===================================================== */
+========================================================= */
 
 .careflow-process {
   padding: 100px 7%;
-
-  background: #0D182B;
+  background: #ffffff;
 }
 
 .careflow-process .careflow-section-heading h2 {
-  color: #ffffff;
+  color: #000000;
 }
 
 .careflow-process .careflow-section-heading p {
-  color: #ffffff;
+  color: #000000;
+  opacity: 0.65;
 }
 
 .careflow-process-grid {
   display: grid;
-
   grid-template-columns: repeat(4, 1fr);
-
   gap: 20px;
 }
 
 .careflow-process-card {
   position: relative;
-
   padding: 30px;
-
-  background: #16243C;
-
-  border-radius: 12px;
-
+  background: #d7d4d4;
+  border-radius: 14px;
   border: 1px solid rgba(255, 255, 255, 0.08);
-
   transition: 0.35s ease;
 }
 
 .careflow-process-card:hover {
   transform: translateY(-7px);
-
-  border-color: #059669;
+  border-color: #10B981;
+  background: #c1cbcb;
 }
 
 .careflow-process-card > span {
   font-size: 38px;
-
   font-weight: 800;
-
-  color: #059669;
+  color: #10B981;
 }
 
 .careflow-process-card h3 {
   margin-top: 10px;
-
-  color: #ffffff;
+  color: black;
 }
 
 .careflow-process-card p {
   margin-top: 10px;
-
-  color: #ffffff;
-
+  color: rgb(56, 53, 53);
   line-height: 1.6;
-
-  opacity: 0.65;
+  opacity: 0.6;
 }
 
-/* =====================================================
+/* =========================================================
    STATS
-===================================================== */
+========================================================= */
 
 .careflow-stats {
   padding: 65px 7%;
-  background: #f5f6f9;
+  background: black;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
@@ -820,9 +698,8 @@ body {
 }
 
 .careflow-stats div {
-  color: #151414;
-
-  border-right: 1px solid rgba(255, 255, 255, 0.15);
+  color: #FFFFFF;
+  border-right: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 .careflow-stats div:last-child {
@@ -836,270 +713,201 @@ body {
 
 .careflow-stats strong {
   font-size: 38px;
-
-  color: #02724f;
+  color: #10B981;
 }
 
 .careflow-stats span {
   margin-top: 7px;
-  color: #000000;
+  color: #FFFFFF;
   font-size: 14px;
-  opacity: 0.7;
+  opacity: 0.65;
 }
 
-/* =====================================================
+/* =========================================================
    CTA
-===================================================== */
+========================================================= */
 
 .careflow-cta {
   margin: 90px 7%;
-
   padding: 60px 65px;
-
-  border-radius: 18px;
-
+  border-radius: 20px;
   background: #059669;
-
-  color: #ffffff;
-
+  color: #FFFFFF;
   display: flex;
-
   align-items: center;
-
   justify-content: space-between;
-
   gap: 30px;
-
   box-shadow: 0 20px 45px rgba(5, 150, 105, 0.2);
 }
 
 .careflow-cta .careflow-section-label {
-  color: #ffffff;
+  color: #D1FAE5;
 }
 
 .careflow-cta h2 {
   margin-top: 10px;
-
   font-size: 42px;
-
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 .careflow-cta h2 span {
-  color: #0D182B;
+  color: #12343B;
 }
 
 .careflow-cta p {
   margin-top: 12px;
-
-  color: #ffffff;
-
+  color: #FFFFFF;
   opacity: 0.9;
 }
 
 .careflow-white-btn {
   flex-shrink: 0;
-
-  padding: 15px 23px;
-
-  background: #ffffff;
-
-  color: #0D182B;
-
+  padding: 15px 25px;
+  background: #FFFFFF;
+  color: #12343B;
   border: none;
-
-  border-radius: 7px;
-
+  border-radius: 8px;
   font-weight: 700;
-
   cursor: pointer;
-
   transition: 0.3s ease;
 }
 
 .careflow-white-btn:hover {
-  background: #0D182B;
-
-  color: #ffffff;
-
+  background: #12343B;
+  color: #FFFFFF;
   transform: translateY(-3px);
 }
 
-/* =====================================================
+/* =========================================================
    FOOTER
-===================================================== */
+========================================================= */
 
 .careflow-footer {
-  background: #0D182B;
-
-  color: #ffffff;
+  background: #12343B;
+  color: #FFFFFF;
 }
 
 .careflow-footer-main {
   padding: 70px 7%;
-
   display: grid;
-
   grid-template-columns: 1.5fr 1fr 1fr 1.3fr;
-
   gap: 50px;
 }
 
 .careflow-footer-about .careflow-logo {
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 .careflow-footer-about p {
   max-width: 310px;
-
   margin-top: 18px;
-
-  color: #ffffff;
-
+  color: #FFFFFF;
   line-height: 1.7;
-
-  opacity: 0.65;
+  opacity: 0.6;
 }
 
 .careflow-socials {
   display: flex;
-
   gap: 9px;
-
   margin-top: 22px;
 }
 
 .careflow-socials span {
-  width: 34px;
-  height: 34px;
-
-  border: 1px solid #16243C;
-
+  width: 35px;
+  height: 35px;
+  border: 1px solid #286066;
   border-radius: 50%;
-
   display: grid;
   place-items: center;
-
   font-size: 11px;
-
-  color: #ffffff;
-
+  color: #FFFFFF;
+  cursor: pointer;
   transition: 0.3s ease;
 }
 
 .careflow-socials span:hover {
   background: #059669;
-
   border-color: #059669;
-
   transform: translateY(-3px);
 }
 
 .careflow-footer-column {
   display: flex;
-
   flex-direction: column;
-
   gap: 13px;
 }
 
 .careflow-footer-column h3 {
   margin-bottom: 8px;
-
   font-size: 17px;
-
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 .careflow-footer-column a {
-  color: #ffffff;
-
-  opacity: 0.65;
-
+  color: #FFFFFF;
+  opacity: 0.6;
   text-decoration: none;
-
   font-size: 14px;
-
   transition: 0.3s ease;
 }
 
 .careflow-footer-column a:hover {
-  color: #059669;
-
+  color: #10B981;
   opacity: 1;
-
   transform: translateX(4px);
 }
 
 .careflow-contact-column p {
   display: flex;
-
   align-items: flex-start;
-
   gap: 9px;
-
-  color: #ffffff;
-
-  opacity: 0.65;
-
+  color: #FFFFFF;
+  opacity: 0.6;
   font-size: 14px;
-
   line-height: 1.5;
 }
 
 .careflow-contact-column svg {
   flex-shrink: 0;
-
   margin-top: 2px;
-
-  color: #059669;
+  color: #10B981;
 }
 
 .careflow-footer-bottom {
   padding: 20px 7%;
-
-  border-top: 1px solid #16243C;
-
+  border-top: 1px solid #286066;
   display: flex;
-
   align-items: center;
-
   justify-content: space-between;
-
-  color: #ffffff;
-
-  opacity: 0.55;
-
+  color: #FFFFFF;
+  opacity: 0.5;
   font-size: 13px;
 }
 
 .careflow-footer-bottom div {
   display: flex;
-
   gap: 20px;
 }
 
 .careflow-footer-bottom a {
-  color: #ffffff;
-
+  color: #FFFFFF;
   text-decoration: none;
-
   transition: 0.3s ease;
 }
 
 .careflow-footer-bottom a:hover {
-  color: #059669;
+  color: #10B981;
+  opacity: 1;
 }
 
-/* =====================================================
-   RESPONSIVE - TABLET
-===================================================== */
+/* =========================================================
+   TABLET
+========================================================= */
 
 @media (max-width: 1000px) {
 
   .careflow-hero {
     grid-template-columns: 1fr;
-
     gap: 45px;
   }
 
@@ -1128,9 +936,9 @@ body {
   }
 }
 
-/* =====================================================
-   RESPONSIVE - MOBILE
-===================================================== */
+/* =========================================================
+   MOBILE
+========================================================= */
 
 @media (max-width: 700px) {
 
@@ -1140,21 +948,15 @@ body {
 
   .careflow-header {
     padding: 20px;
-
     flex-wrap: wrap;
-
     gap: 20px;
   }
 
   .careflow-nav {
     order: 3;
-
     width: 100%;
-
     overflow-x: auto;
-
     justify-content: flex-start;
-
     padding-bottom: 5px;
   }
 
@@ -1162,17 +964,13 @@ body {
     display: none;
   }
 
-  /* HERO */
-
   .careflow-hero {
     padding: 60px 20px;
-
     grid-template-columns: 1fr;
   }
 
   .careflow-hero h1 {
     font-size: 43px;
-
     letter-spacing: -1px;
   }
 
@@ -1187,7 +985,6 @@ body {
   .careflow-primary-btn,
   .careflow-secondary-btn {
     width: 100%;
-
     text-align: center;
   }
 
@@ -1208,8 +1005,6 @@ body {
     right: 10px;
     bottom: 25px;
   }
-
-  /* ABOUT */
 
   .careflow-about,
   .careflow-services,
@@ -1236,24 +1031,16 @@ body {
     font-size: 34px;
   }
 
-  /* SERVICES */
-
   .careflow-service-grid,
   .careflow-feature-grid,
   .careflow-process-grid {
     grid-template-columns: 1fr;
   }
 
-  .careflow-service-card {
-    padding: 25px;
-  }
-
-  /* STATS */
-
   .careflow-stats {
     grid-template-columns: repeat(2, 1fr);
-
     padding: 50px 20px;
+    gap: 30px 15px;
   }
 
   .careflow-stats div {
@@ -1264,54 +1051,40 @@ body {
     font-size: 30px;
   }
 
-  /* CTA */
-
   .careflow-cta {
     margin: 60px 20px;
-
     padding: 40px 25px;
-
     flex-direction: column;
-
     align-items: flex-start;
   }
 
   .careflow-white-btn {
     width: 100%;
-
     text-align: center;
   }
 
-  /* FOOTER */
-
   .careflow-footer-main {
     padding: 55px 20px;
-
     grid-template-columns: 1fr;
-
     gap: 35px;
   }
 
   .careflow-footer-bottom {
     padding: 20px;
-
     flex-direction: column;
-
     gap: 15px;
-
     text-align: center;
   }
 
   .careflow-footer-bottom div {
     flex-wrap: wrap;
-
     justify-content: center;
   }
 }
 
-/* =====================================================
+/* =========================================================
    SMALL MOBILE
-===================================================== */
+========================================================= */
 
 @media (max-width: 420px) {
 
@@ -1329,7 +1102,6 @@ body {
 
   .careflow-floating-card {
     padding: 11px;
-
     gap: 8px;
   }
 
@@ -1350,7 +1122,7 @@ body {
   }
 
   .careflow-stats {
-    gap: 10px;
+    gap: 20px 10px;
   }
 
   .careflow-stats strong {
@@ -1361,3 +1133,19 @@ body {
     font-size: 12px;
   }
 }
+
+
+
+
+
+
+
+
+
+
+/* request to call */
+
+
+
+
+

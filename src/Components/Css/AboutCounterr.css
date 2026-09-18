@@ -1,0 +1,86 @@
+/* ------------------------------------------------------------------ */
+/*  COLORS — inhe badal kar poori theme change ho jayegi                */
+/* ------------------------------------------------------------------ */
+
+:root {
+  --stats-bg: #e5e8ec;
+  --stats-number: #35ac23;
+  --stats-label: #000000;
+  --stats-pattern-dot: rgba(255, 255, 255, 0.12);
+}
+
+/* ------------------------------------------------------------------ */
+/*  SECTION                                                            */
+/* ------------------------------------------------------------------ */
+
+.stats-section {
+  background: var(--stats-bg);
+  padding: 3.5rem 1.5rem;
+  font-family: "Inter", "Segoe UI", sans-serif;
+}
+
+.stats-section__grid {
+  max-width: 72rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem 1.5rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .stats-section__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/*  SINGLE STAT                                                        */
+/* ------------------------------------------------------------------ */
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stat__number {
+  margin: 0;
+  font-size: 2.75rem;
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--stats-number);
+  font-variant-numeric: tabular-nums; /* digits jump na karein width me */
+}
+
+@media (min-width: 768px) {
+  .stat__number {
+    font-size: 3.25rem;
+  }
+}
+
+/* dotted-pattern background jo label ke peeche dikhta hai */
+.stat__label-wrap {
+  margin-top: 0.75rem;
+  position: relative;
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+}
+
+.stat__label-wrap::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(var(--stats-pattern-dot) 1.2px, transparent 1.2px);
+  background-size: 8px 8px;
+  border-radius: 4px;
+}
+
+.stat__label {
+  position: relative;
+  margin: 0;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  color: var(--stats-label);
+  white-space: nowrap;
+}

@@ -12,7 +12,7 @@
     align-items: center;
     justify-content: space-between;
 
-    background: #ffffff;
+    background: #1A454A;
     border-bottom: 1px solid #eeeeee;
 
     position: relative;
@@ -22,25 +22,11 @@
 }
 
 
-/* Header Animation */
-@keyframes servicehub-slide {
-    from {
-        opacity: 0;
-        transform: translateY(-12px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-
 /* Logo */
 .servicehub-logo {
     font-size: 24px;
     font-weight: 800;
-    color: #14213d;
+    color: white;
 
     letter-spacing: -0.7px;
     cursor: pointer;
@@ -64,7 +50,7 @@
     position: relative;
 
     text-decoration: none;
-    color: #475569;
+    color: white;
 
     font-size: 15px;
     font-weight: 600;
@@ -104,8 +90,8 @@
 /* Login Button */
 .servicehub-login {
     border: none;
-    background: #14213d;
-    color: #ffffff;
+    background: white;
+    color: #0b0a0a;
 
     padding: 11px 20px;
 
@@ -120,7 +106,7 @@
 }
 
 .servicehub-login:hover {
-    background: #16a34a;
+    background: #02cb4c;
     transform: translateY(-2px);
 
     box-shadow: 0 7px 18px rgba(22, 163, 74, 0.18);
