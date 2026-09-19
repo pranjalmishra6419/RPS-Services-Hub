@@ -8,7 +8,7 @@ import '../Components/Css/AboutCounterr.css'
 const STATS = [
   { end: 1240, suffix: "+", label: "Job Done" },
   { end: 1055, suffix: "+", label: "Current Clients" },
-  { end: 15, suffix: "+", label: "Plumbers" },
+  { end: 100, suffix: "+", label: "Workers" },
   { end: 24, suffix: "/7", label: "Service" },
 ];
 

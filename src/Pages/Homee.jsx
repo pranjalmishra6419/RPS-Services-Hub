@@ -91,37 +91,10 @@ const Home = () => {
 
         </div>
 
-        <div className="careflow-hero-card" data-aos="fade-left" 
-  data-aos-duration="2500">
-
-          {/* <div className="careflow-floating-card careflow-card-one">
-            <FiCheckCircle />
-            <div>
-              <strong>Service Booked</strong>
-              <small>Professional assigned</small>
-            </div>
-          </div> */}
-
-          <div className="careflow-hero-image">
-            <div className="careflow-image-overlay">
-              <span>Professional Services</span>
-              <h3>Help is just a booking away.</h3>
-            </div>
-          </div>
-
-          {/* <div className="careflow-floating-card careflow-card-two">
-            <div className="careflow-avatar">CF</div>
-            <div>
-              <strong>Verified Provider</strong>
-              <small>Available near you</small>
-            </div>
-          </div> */}
-
-        </div>
       </section>
 
       {/* About */}
-      <section className="careflow-about" id="about">
+      <section className="careflow-about" id="about" data-aos="zoom-in-up" data-aos-duration="800" >
 
         <div className="careflow-about-image">
           <div className="careflow-about-box">
@@ -180,7 +153,7 @@ const Home = () => {
     <ServiceCountPages/>
 
       {/* Why CareFlow */}
-      <section className="careflow-why">
+      <section className="careflow-why" data-aos="zoom-in-up" data-aos-duration="1000">
 
         <div className="careflow-section-heading">
           <span className="careflow-section-label">WHY CAREFLOW</span>
