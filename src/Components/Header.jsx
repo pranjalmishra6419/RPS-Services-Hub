@@ -53,7 +53,7 @@ const Header = () => {
         </NavLink>
 
         <NavLink
-          to="/about"
+          to="/contact"
           className={({ isActive }) =>
             `servicehub-link ${isActive ? "servicehub-active" : ""}`
           }

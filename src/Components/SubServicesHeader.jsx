@@ -8,12 +8,13 @@ const SubServicesHeader = () => {
     <div className="service-subnav">
 
       <div className="service-subnav-links">
-        <NavLink to="/home-services">Home Services</NavLink>
-        <NavLink to="/vehicle-services">Plumbing Services</NavLink>
-        <NavLink to="/tech-services">Electrical Services</NavLink>
-        <NavLink to="/repair-services">Vehicle Services</NavLink>
-        <NavLink to="/cleaning-services">Tech Services</NavLink>
-        <NavLink to="/personal-care">Cleaning Services</NavLink>
+        <NavLink to="/plumbingservices">Plumbing Services</NavLink>
+        <NavLink to="/electricalservices">Electrical Services</NavLink>
+        <NavLink to="/vehicleservices">Vehicle Services</NavLink>
+        <NavLink to="/techservices">Tech Services</NavLink>
+        <NavLink to="/cleaningservices">Cleaning Services</NavLink>
+        <NavLink to="/movinsiftingservices">Moving And Shifting</NavLink>
+
       </div>
 
     </div>

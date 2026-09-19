@@ -1,25 +1,18 @@
 import React from 'react'
-import './Css/Footer.css'
+import '../Components/Css/Footer.css'
 
 const Footer = () => {
   return (
     <>
-    <footer class="cf-footer">
+    <footer className="cf-footer">
 
-    <div class="cf-footer-main">
+    <div className="cf-footer-main">
 
-        <div class="cf-footer-brand">
-            <img src="/image/logo2.jpg" alt="" />
-
-            <p>
-                Your trusted platform to discover, compare and book
-                everyday services quickly and easily.
-            </p>
-
-            
+        <div className="cf-footer-brand">
+            map..............
         </div>
 
-        <div class="cf-footer-column">
+        <div className="cf-footer-column">
             <h3>Our Services</h3>
 
             <a href="#">Home Services</a>
@@ -30,7 +23,7 @@ const Footer = () => {
             <a href="#">Personal Care</a>
         </div>
 
-        <div class="cf-footer-column">
+        <div className="cf-footer-column">
             <h3>Quick Links</h3>
 
             <a href="#">Home</a>
@@ -42,7 +35,7 @@ const Footer = () => {
         </div>
 
 
-        <div class="cf-footer-column">
+        <div className="cf-footer-column">
             <h3>For Providers</h3>
 
             <a href="#">Become a Provider</a>
@@ -53,13 +46,13 @@ const Footer = () => {
         </div>
 
 
-        <div class="cf-footer-column cf-footer-contact">
+        <div className="cf-footer-column cf-footer-contact">
             <h3>Get In Touch</h3>
 
             <p>📍 Lucknow, Uttar Pradesh</p>
             <p>📞 +91 98765 43210</p>
             <p>✉️ support@careflow.com</p>
-          <div class="cf-footer-social">
+          <div className="cf-footer-social">
                 <a href="#">f</a>
                 <a href="#">in</a>
                 <a href="#">𝕏</a>

@@ -8,146 +8,120 @@
     width: 100%;
     object-fit: cover;
 }
-
-.services-category-section {
-    padding: 85px 6%;
-    background: #ffffff;
+/* cotegory */
+.service-section {
+    width: 90%;
+    margin: 60px auto;
+    padding: 35px;
+    background: #EAF7F0;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
 }
 
-.services-heading {
-    max-width: 700px;
-    margin: 0 auto 50px;
-    text-align: center;
+/* Image */
+
+.service-image {
+    width: 45%;
 }
 
-.services-heading h2 {
-    color: #1A454A;
-    font-size: 36px;
-    margin: 12px 0;
-}
-
-.services-heading p {
-    color: #6B7280;
-    font-size: 14px;
-    line-height: 1.8;
-}
-
-.services-category-grid {
-    max-width: 1200px;
-    margin: auto;
-
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-}
-
-.services-category-card {
-    background: #ffffff;
-    border: 1px solid #e0eaea;
-    border-radius: 12px;
-    overflow: hidden;
-    transition: 0.3s ease;
-}
-
-.services-category-card:hover {
-    transform: translateY(-6px);
-    border-color: #10B981;
-    box-shadow: 0 15px 35px rgba(18, 52, 59, 0.10);
-}
-
-.services-card-image {
-    height: 220px;
-    overflow: hidden;
-}
-
-.services-card-image img {
+.service-image img {
     width: 100%;
-    height: 100%;
+    height: 380px;
     object-fit: cover;
-    transition: 0.5s ease;
+    border-radius: 20px;
 }
 
-.services-category-card:hover .services-card-image img {
-    transform: scale(1.06);
+/* Content */
+
+.service-content {
+    width: 55%;
 }
 
-.services-card-content {
-    padding: 24px;
+.service-tag {
+    color: #020c0d;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
 }
 
-.services-card-content > span {
-    color: #10B981;
-    font-size: 10px;
-    font-weight: 700;
-    letter-spacing: 1px;
+.service-content h2 {
+    font-size: 38px;
+    color: #0e8a3b;
+    margin: 15px 0;
+    line-height: 1.2;
 }
 
-.services-card-content h3 {
-    color: #1A454A;
-    font-size: 22px;
-    margin: 9px 0 10px;
-}
-
-.services-card-content > p {
-    color: #6B7280;
-    font-size: 13px;
+.service-content > p {
+    color: #4a4d4f;
+    font-size: 16px;
     line-height: 1.7;
-    min-height: 65px;
+    margin-bottom: 25px;
 }
 
-.services-list {
-    margin: 20px 0;
-    padding-top: 17px;
-    border-top: 1px solid #edf1f1;
+/* Services */
 
+.service-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.service-item {
+    display: flex;
+    align-items: center;
     gap: 10px;
 }
 
-.services-list a {
-    color: #4B5563;
-    font-size: 12px;
-    text-decoration: none;
-    transition: 0.2s ease;
-}
-
-.services-list a::before {
-    content: "✓";
-    color: #10B981;
-    margin-right: 7px;
+.service-item span {
+    color: #159b7c;
+    font-size: 20px;
     font-weight: bold;
 }
 
-.services-list a:hover {
-    color: #10B981;
+.service-item p {
+    color: black;
+    font-size: 15px;
 }
 
-.services-view-btn {
+/* Button */
+
+.service-btn {
     display: inline-block;
-    color: #10B981;
     text-decoration: none;
-    font-size: 12px;
-    font-weight: 700;
-    margin-top: 5px;
+    background: #159b7c;
+    color: white;
+    padding: 13px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: 0.3s;
 }
+
+.service-btn:hover {
+    background: #1a454a;
+    transform: translateY(-2px);
+}
+
 /* done */
 .services-detail-section {
     max-width: 90%;
     margin: auto;
     padding: 50px 25px;
     margin-bottom: 50px;
+    margin-top: 10px;
     display: grid;
-    background-color: #cfd5d5;
+    background-color: #EAF7F0;
     grid-template-columns: 1fr 1fr;
     border-radius: 10px 40px 0px 60px;
-    transition: 0.9s ;
+    transition: 0.9s;
     gap: 65px;
     align-items: center;
 }
 .services-detail-section:hover{
     transform: translateY(-5px) ;
-    background-color: #bdc2c2;
+    background-color: #d2eddf;
     border-radius: 30px 45px 0px 70px;
     transition: 0.9s ;
     color: #292828;
@@ -201,70 +175,73 @@
     object-fit: cover;
     border-radius: 14px;
 }
-
 .services-process-section {
-    padding: 85px 6%;
-    margin: auto;
-    border-radius: 40px;
-    margin-bottom: 40px;
-    background: #cfd5d5;
-    transition: 0.5s;
-    width: 90%;
+  padding: 85px 6%;
+  margin: auto;
+  border-radius: 40px;
+  margin-bottom: 40px;
+  background: #EAF7F0;
+  transition: 0.5s;
+  width: 90%;
+  text-align: center;
 }
-.services-process-section:hover{
-    background-color: rgb(240, 237, 237);
-    transform: translateY(-5px) ;
-    background-color: #bdc2c2;
-    transition: 0.9s ;
+
+.services-process-section:hover {
+  background-color: #cfebdc;
+  transform: translateY(-5px);
+  transition: 0.9s;
 }
-.services-dark-heading>span{
-    color: #000000;
-    font-weight: bold;
-    font-size: 18px;
+
+.services-dark-heading > span {
+  color: #000000;
+  font-weight: 500;
+  font-size: 18px;
 }
+
 .services-dark-heading h2 {
-    color: green;
+  color: green;
+  font-size: 32px;
 }
 
 .services-dark-heading p {
-    color: black;
-    font-weight: 600;
+  color: black;
 }
 
 .services-process-grid {
-    max-width: 1150px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 18px;
+  max-width: 1150px;
+  margin: 40px auto 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
 }
 
 .services-process-card {
-    padding: 28px 23px;
-    background: #1A454A;
-    border: 1px solid rgba(255,255,255,0.08);
-    border-radius: 10px;
-    transition: 0.3s ease;
+  padding: 28px 23px;
+  background: #1A454A;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  transition: 0.3s ease;
+  text-align: center;
 }
 
 .services-process-card:hover {
-    transform: translateY(-5px);
-    border-color: #10B981;
+  transform: translateY(-5px);
+  border-color: #10B981;
 }
 
 .services-process-card strong {
-    color: #10B981;
-    font-size: 14px;
+  color: #10B981;
+  font-size: 14px;
 }
 
 .services-process-card h3 {
-    color: #ffffff;
-    font-size: 17px;
-    margin: 20px 0 10px;
+  color: #ffffff;
+  font-size: 17px;
+  margin: 20px 0 10px;
 }
 
 .services-process-card p {
-    color: #c8d4d5;
-    font-size: 12px;
-    line-height: 1.7;
+  color: #c8d4d5;
+  font-size: 12px;
+  line-height: 1.7;
 }

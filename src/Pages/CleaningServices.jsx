@@ -1,10 +1,13 @@
 import React from 'react'
 import "./CSS/CleaningServices.css";
+import Header from '../Components/Header';
+import SubServicesHeader from '../Components/SubServicesHeader';
 
 const CleaningServices = () => {
   return (
     <>
-
+    <Header/>
+    <SubServicesHeader/>
 {/* <section class="cleaning-title-section">
     <div class="cleaning-title-content">
         <span>CARE­FLOW / CLEANING SERVICES</span>

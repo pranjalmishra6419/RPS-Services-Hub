@@ -1,114 +1,10 @@
-
-/* =========================================================
-   CAREFLOW - COMPLETE HOME PAGE CSS
-   Updated Dark Color Palette
-
-   Deep Teal : #12343B
-   Teal Dark  : #1A454A
-   Teal Hover : #20565A
-   Emerald    : #10B981
-   Green      : #059669
-   Light      : #F8FAFC
-   White      : #FFFFFF
-   Text       : #334155
-   Muted      : #64748B
-   background navbar : #d7d4d4
-   
-========================================================= */
-
-html {
-  scroll-behavior: smooth;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background: #FFFFFF;
-  color: #12343B;
-}
-
 .careflow-home {
   width: 100%;
   overflow: hidden;
 }
-
-/* =========================================================
-   ANIMATIONS
-========================================================= */
-
-@keyframes careflowFadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(35px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes careflowFadeLeft {
-  from {
-    opacity: 0;
-    transform: translateX(-40px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes careflowFadeRight {
-  from {
-    opacity: 0;
-    transform: translateX(40px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes careflowFloat {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-
-  50% {
-    transform: translateY(-10px);
-  }
-}
-
-@keyframes careflowPulse {
-  0% {
-    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.35);
-  }
-
-  70% {
-    box-shadow: 0 0 0 12px rgba(16, 185, 129, 0);
-  }
-
-  100% {
-    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
-  }
-}
-
-/* =========================================================
-   HERO
-========================================================= */
-
 .careflow-hero {
   min-height: 400px;
-  padding: 75px 7%;
+  padding: 25px 7%;
   background: #ffffff;
   display: grid;
   grid-template-columns: 1fr 0.9fr;
@@ -137,7 +33,7 @@ body {
 }
 
 .careflow-hero h1 {
-  font-size: clamp(45px, 5vw, 68px);
+  font-size: clamp(40px, 8vw, 50px);
   line-height: 1.08;
   letter-spacing: -2px;
   color: #000000;
@@ -148,9 +44,9 @@ body {
 }
 
 .careflow-hero p {
-  margin-top: 25px;
+  margin-top: 10px;
   max-width: 570px;
-  font-size: 18px;
+  font-size: 15px;
   line-height: 1.7;
   color: #000000;
   opacity: 0.72;
@@ -159,17 +55,17 @@ body {
 .careflow-hero-buttons {
   display: flex;
   gap: 15px;
-  margin-top: 32px;
+  margin-top: 15px;
 }
 
 .careflow-primary-btn {
   padding: 15px 24px;
   border-radius: 8px;
-  background: #10B981;
+  background: #10b948;
   border: 1px solid #10B981;
-  color: black;
+  color: white;
   font-size: 15px;
-  font-weight: 700;
+  font-weight: 400;
   cursor: pointer;
   transition: 0.3s ease;
   box-shadow: 0 8px 20px rgba(16, 185, 129, 0.18);
@@ -185,24 +81,24 @@ body {
 .careflow-secondary-btn {
   padding: 15px 24px;
   border-radius: 8px;
-  background: transparent;
+  background: #286066;
   color: #FFFFFF;
   border: 1px solid rgba(255, 255, 255, 0.5);
   font-size: 15px;
-  font-weight: 700;
+  font-weight: 400;
   cursor: pointer;
   transition: 0.3s ease;
 }
 
 .careflow-secondary-btn:hover {
-  background: #FFFFFF;
-  color: #12343B;
+  background: #059669;
+  color: #ffffff;
   border-color: #FFFFFF;
   transform: translateY(-3px);
 }
 
 .careflow-trust {
-  margin-top: 35px;
+  margin-top: 30px;
   font-weight: bold;
   color: #FFFFFF;
 }
@@ -217,7 +113,7 @@ body {
 .careflow-trust p {
   margin-top: 7px;
   font-size: 13px;
-  color: #FFFFFF;
+  color: #000000;
   opacity: 0.6;
 }
 
@@ -227,21 +123,21 @@ body {
 
 .careflow-hero-card {
   position: relative;
-  min-height: 580px;
+  min-height: 500px;
   animation: careflowFadeRight 0.8s ease forwards;
 }
 
 .careflow-hero-image {
   width: 100%;
-  height: 570px;
+  height: 480px;
   border-radius: 22px;
 
   background:
     linear-gradient(
       rgba(18, 52, 59, 0.15),
-      rgba(18, 52, 59, 0.78)
+      rgba(18, 52, 59, 0.1)
     ),
-    url("/image/raf7.jpg") center / cover;
+    url("/image/homemain2.png") center / cover;
 
   position: relative;
   overflow: hidden;
@@ -451,121 +347,6 @@ body {
 
 .careflow-check-list svg {
   color: #059669;
-}
-
-/* =========================================================
-   SERVICES
-========================================================= */
-
-.careflow-services {
-  padding: 100px 7%;
-  background: #F8FAFC;
-}
-
-.careflow-service-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 23px;
-}
-
-.careflow-service-card {
-  padding: 30px;
-  background: #FFFFFF;
-  border: 1px solid #E2E8F0;
-  border-radius: 15px;
-  transition: 0.35s ease;
-  position: relative;
-  overflow: hidden;
-}
-
-.careflow-service-card::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 3px;
-  background: #10B981;
-  transition: 0.35s ease;
-}
-
-.careflow-service-card:hover::before {
-  width: 100%;
-}
-
-.careflow-service-card:hover {
-  transform: translateY(-8px);
-  border-color: rgba(16, 185, 129, 0.25);
-  box-shadow: 0 18px 40px rgba(18, 52, 59, 0.1);
-}
-
-.careflow-service-icon {
-  width: 58px;
-  height: 58px;
-  display: grid;
-  place-items: center;
-  border-radius: 12px;
-  background: #ECFDF5;
-  color: #059669;
-  font-size: 26px;
-  transition: 0.3s ease;
-}
-
-.careflow-service-card:hover .careflow-service-icon {
-  background: #059669;
-  color: #FFFFFF;
-  transform: scale(1.08);
-}
-
-.careflow-service-card h3 {
-  margin-top: 20px;
-  color: #12343B;
-  font-size: 20px;
-}
-
-.careflow-service-card p {
-  margin-top: 12px;
-  color: #64748B;
-  line-height: 1.6;
-}
-
-.careflow-service-card a {
-  display: flex;
-  align-items: center;
-  gap: 7px;
-  margin-top: 20px;
-  text-decoration: none;
-  color: #059669;
-  font-size: 14px;
-  font-weight: 700;
-  transition: 0.3s ease;
-}
-
-.careflow-service-card a:hover {
-  color: #12343B;
-  transform: translateX(5px);
-}
-
-.careflow-services-btn {
-  text-align: center;
-  margin-top: 40px;
-}
-
-.careflow-outline-btn {
-  padding: 14px 25px;
-  background: #12343B;
-  color: #FFFFFF;
-  border: 1px solid #12343B;
-  border-radius: 8px;
-  cursor: pointer;
-  font-weight: 700;
-  transition: 0.3s ease;
-}
-
-.careflow-outline-btn:hover {
-  background: #059669;
-  border-color: #059669;
-  transform: translateY(-3px);
 }
 
 /* =========================================================
@@ -899,253 +680,3 @@ body {
   color: #10B981;
   opacity: 1;
 }
-
-/* =========================================================
-   TABLET
-========================================================= */
-
-@media (max-width: 1000px) {
-
-  .careflow-hero {
-    grid-template-columns: 1fr;
-    gap: 45px;
-  }
-
-  .careflow-hero-content {
-    max-width: 800px;
-  }
-
-  .careflow-service-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .careflow-feature-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .careflow-process-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .careflow-footer-main {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .careflow-about {
-    gap: 50px;
-  }
-}
-
-/* =========================================================
-   MOBILE
-========================================================= */
-
-@media (max-width: 700px) {
-
-  .careflow-topbar {
-    display: none;
-  }
-
-  .careflow-header {
-    padding: 20px;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-
-  .careflow-nav {
-    order: 3;
-    width: 100%;
-    overflow-x: auto;
-    justify-content: flex-start;
-    padding-bottom: 5px;
-  }
-
-  .careflow-header-btn {
-    display: none;
-  }
-
-  .careflow-hero {
-    padding: 60px 20px;
-    grid-template-columns: 1fr;
-  }
-
-  .careflow-hero h1 {
-    font-size: 43px;
-    letter-spacing: -1px;
-  }
-
-  .careflow-hero p {
-    font-size: 16px;
-  }
-
-  .careflow-hero-buttons {
-    flex-direction: column;
-  }
-
-  .careflow-primary-btn,
-  .careflow-secondary-btn {
-    width: 100%;
-    text-align: center;
-  }
-
-  .careflow-hero-card {
-    min-height: 400px;
-  }
-
-  .careflow-hero-image {
-    height: 390px;
-  }
-
-  .careflow-card-one {
-    left: 10px;
-    top: 20px;
-  }
-
-  .careflow-card-two {
-    right: 10px;
-    bottom: 25px;
-  }
-
-  .careflow-about,
-  .careflow-services,
-  .careflow-why,
-  .careflow-process {
-    padding: 70px 20px;
-  }
-
-  .careflow-about {
-    grid-template-columns: 1fr;
-  }
-
-  .careflow-about-image {
-    height: 380px;
-  }
-
-  .careflow-about-box {
-    right: 15px;
-  }
-
-  .careflow-about-content h2,
-  .careflow-section-heading h2,
-  .careflow-cta h2 {
-    font-size: 34px;
-  }
-
-  .careflow-service-grid,
-  .careflow-feature-grid,
-  .careflow-process-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .careflow-stats {
-    grid-template-columns: repeat(2, 1fr);
-    padding: 50px 20px;
-    gap: 30px 15px;
-  }
-
-  .careflow-stats div {
-    border-right: none;
-  }
-
-  .careflow-stats strong {
-    font-size: 30px;
-  }
-
-  .careflow-cta {
-    margin: 60px 20px;
-    padding: 40px 25px;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .careflow-white-btn {
-    width: 100%;
-    text-align: center;
-  }
-
-  .careflow-footer-main {
-    padding: 55px 20px;
-    grid-template-columns: 1fr;
-    gap: 35px;
-  }
-
-  .careflow-footer-bottom {
-    padding: 20px;
-    flex-direction: column;
-    gap: 15px;
-    text-align: center;
-  }
-
-  .careflow-footer-bottom div {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-}
-
-/* =========================================================
-   SMALL MOBILE
-========================================================= */
-
-@media (max-width: 420px) {
-
-  .careflow-hero {
-    padding: 45px 16px;
-  }
-
-  .careflow-hero h1 {
-    font-size: 36px;
-  }
-
-  .careflow-hero-image {
-    height: 350px;
-  }
-
-  .careflow-floating-card {
-    padding: 11px;
-    gap: 8px;
-  }
-
-  .careflow-floating-card strong {
-    font-size: 11px;
-  }
-
-  .careflow-floating-card small {
-    font-size: 10px;
-  }
-
-  .careflow-card-one {
-    left: 5px;
-  }
-
-  .careflow-card-two {
-    right: 5px;
-  }
-
-  .careflow-stats {
-    gap: 20px 10px;
-  }
-
-  .careflow-stats strong {
-    font-size: 26px;
-  }
-
-  .careflow-stats span {
-    font-size: 12px;
-  }
-}
-
-
-
-
-
-
-
-
-
-
-/* request to call */
-
-
-
-
-

@@ -3,6 +3,7 @@ import "../Pages/Css/About.css";
 import AboutCounter from '../Components/AboutCounter'
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
+import ServiceCountPages from "../Components/ServiceCountPages";
 
 const services = [
   {
@@ -264,6 +265,7 @@ const About = () => {
         </div>
 
       </section> */}
+      <ServiceCountPages/>
       <AboutCounter/>
 
 
@@ -335,48 +337,6 @@ const About = () => {
             </div>
           </div>
         </div>
-      </section>
-      <section className="services-section">
-        <div className="section-container">
-          <div className="section-heading">
-            <span className="small-title">
-              WHAT WE OFFER
-            </span>
-            <h2>
-              Everything You Need,
-              <span> In One Place.</span>
-            </h2>
-            <p>
-              Explore a wide range of everyday services through
-              one simple and convenient platform.
-            </p>
-          </div>
-          <div className="service-grid">
-
-            {services.map((service, index) => (
-
-              <div className="service-card" key={index}>
-
-                <div className="service-icon">
-                  {service.icon}
-                </div>
-
-                <h3>{service.title}</h3>
-
-                <p>{service.text}</p>
-
-                <span className="service-arrow">
-                  →
-                </span>
-
-              </div>
-
-            ))}
-
-          </div>
-
-        </div>
-
       </section>
 
 

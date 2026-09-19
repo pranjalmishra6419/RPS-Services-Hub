@@ -1,10 +1,6 @@
 import React, { useState } from "react";
 import "../Pages/Css/RequestToCall.css";
 
-/* ------------------------------------------------------------------ */
-/*  DATA — apni zarurat ke hisaab se badal sakte hain                  */
-/* ------------------------------------------------------------------ */
-
 const CATEGORIES = [
   {
     id: "plumbing",
@@ -29,11 +25,8 @@ const CATEGORIES = [
   { id: "tech", name: "Tech Services", items: ["Laptop Repair", "Mobile Repair", "Website Repair", "Wi-Fi Repair", "Software Installation"] },
 ];
 
-const CITIES = ["Raebareli", "Lucknow", "Kanpur", "Prayagraj", "Varanasi", "Ayodhya", "Gorakhpur", "Sultanpur", "Amethi", "Barabanki", "Unnao", "Pratapgarh"];
+const CITIES = ["Mirzapur","Raebareli", "Lucknow", "Kanpur", "Prayagraj", "Varanasi", "Ayodhya", "Gorakhpur", "Sultanpur", "Amethi", "Barabanki", "Unnao", "Pratapgarh"];
 
-/* ------------------------------------------------------------------ */
-/*  ICONS                                                              */
-/* ------------------------------------------------------------------ */
 
 const S = { fill: "none", stroke: "currentColor", strokeWidth: 1.6, strokeLinecap: "round", strokeLinejoin: "round" };
 
