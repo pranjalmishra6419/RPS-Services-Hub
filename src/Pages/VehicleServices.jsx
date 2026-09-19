@@ -9,7 +9,7 @@ const VehicleServices = () => {
     <Header/>
     <SubServicesHeader/>
     <div className='vehicle-hero-img'>
-        <img src="/image/subvihical.jpg" alt="" />
+        <img src="/image/subvehical.jpg" alt="" />
 
     </div>
     <Footer/>

@@ -8,6 +8,9 @@ const ElectricalServices = () => {
     <>
     <Header/>
     <SubServicesHeader/>
+    <div className='electric-hero-img'>
+      <img src="image/subele.jpg" alt="" />
+    </div>
     <Footer/>
     </>
   )

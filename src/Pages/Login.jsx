@@ -1,148 +1,176 @@
-
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import "../Pages/Css/Login.css";
+import "../Pages/CSS/Login.css";
 
-const Login = () => {
+function Login() {
   const [showPassword, setShowPassword] = useState(false);
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    alert("Login successful!");
+  };
+
   return (
-    <div className="login-page">
+    <section className="login-page">
 
-      <div className="login-left">
+      <div className="login-wrapper">
 
-        <div className="login-left-content">
+        {/* LEFT SIDE */}
+        <div className="login-left">
 
-          <div className="login-brand">
-            PRS <span>Services Hub</span>
+          <div className="login-tag">
+            <span></span>
+            WELCOME TO SERVICES HUB
           </div>
 
-          <div>
-            <span className="login-small-title">
-              WELCOME BACK
-            </span>
+          <h1>
+            Your services.
+            <br />
+            <span>One simple place.</span>
+          </h1>
 
-            <h1>
-              Your Services,
-              <br />
-              <span>All In One Place.</span>
-            </h1>
+          <p className="login-intro">
+            Login to your Services Hub account and easily manage
+            your bookings, services and requests from one place.
+          </p>
 
-            <p>
-              Find trusted professionals and manage your everyday
-              service needs easily with PRS Services Hub.
-            </p>
+          <div className="login-features">
 
-            <div className="login-features">
+            <div className="login-feature">
+              <div className="login-icon">✓</div>
               <div>
-                <span>✓</span>
-                Multiple services
-              </div>
-
-              <div>
-                <span>✓</span>
-                Easy service discovery
-              </div>
-
-              <div>
-                <span>✓</span>
-                Simple booking experience
+                <h3>Easy Service Booking</h3>
+                <p>Book the services you need in just a few clicks.</p>
               </div>
             </div>
+
+            <div className="login-feature">
+              <div className="login-icon">⌂</div>
+              <div>
+                <h3>Manage Your Bookings</h3>
+                <p>Keep track of your upcoming service requests.</p>
+              </div>
+            </div>
+
+            <div className="login-feature">
+              <div className="login-icon">24</div>
+              <div>
+                <h3>Quick Support</h3>
+                <p>Get help whenever you need assistance.</p>
+              </div>
+            </div>
+
+          </div>
+
+          <div className="login-bottom-text">
+            <span>New to Services Hub?</span>
+            <strong>Create your account and get started.</strong>
           </div>
 
         </div>
 
-        <div className="login-right">
 
-          <div className="login-card">
+        {/* RIGHT SIDE */}
+        <div className="login-form-box">
 
-            <div className="login-card-header">
-              <h2>Welcome Back</h2>
-              <p>Login to continue to your account</p>
+          <div className="login-form-heading">
+            <p>ACCOUNT LOGIN</p>
+
+            <h2>Welcome back!</h2>
+
+            <span>
+              Enter your details to access your account.
+            </span>
+          </div>
+
+          <form onSubmit={handleSubmit}>
+
+            {/* EMAIL */}
+            <div className="login-form-group">
+              <label>Email Address</label>
+
+              <input
+                type="email"
+                placeholder="Enter your email"
+                required
+              />
             </div>
 
-            <form>
 
-              <div className="login-input-group">
-                <label>Email Address</label>
+            {/* PASSWORD */}
+            <div className="login-form-group">
 
-                <div className="login-input-box">
-                  <span>✉</span>
-
-                  <input
-                    type="email"
-                    placeholder="Enter your email"
-                  />
-                </div>
-              </div>
-
-              <div className="login-input-group">
+              <div className="password-label">
                 <label>Password</label>
 
-                <div className="login-input-box">
-                  <span>🔒</span>
-
-                  <input
-                    type={showPassword ? "text" : "password"}
-                    placeholder="Enter your password"
-                  />
-
-                  <button
-                    type="button"
-                    className="password-toggle"
-                    onClick={() =>
-                      setShowPassword(!showPassword)
-                    }
-                  >
-                    {showPassword ? "Hide" : "Show"}
-                  </button>
-                </div>
+                <a href="#forgot">
+                  Forgot password?
+                </a>
               </div>
 
-              <div className="login-options">
+              <div className="password-input">
 
-                <label className="remember-me">
-                  <input type="checkbox" />
-                  <span>Remember me</span>
-                </label>
+                <input
+                  type={showPassword ? "text" : "password"}
+                  placeholder="Enter your password"
+                  required
+                />
 
-                <Link to="/forgot-password">
-                  Forgot Password?
-                </Link>
+                <button
+                  type="button"
+                  onClick={() =>
+                    setShowPassword(!showPassword)
+                  }
+                  className="show-password"
+                >
+                  {showPassword ? "Hide" : "Show"}
+                </button>
 
               </div>
 
-              <button
-                type="submit"
-                className="login-btn"
-              >
-                Login
-                <span>→</span>
-              </button>
+            </div>
 
-            </form>
 
+            {/* REMEMBER */}
+            <div className="remember-row">
+
+              <label>
+                <input type="checkbox" />
+                <span>Remember me</span>
+              </label>
+
+            </div>
+
+
+            {/* LOGIN BUTTON */}
+            <button
+              type="submit"
+              className="login-button"
+            >
+              Login
+              <span>→</span>
+            </button>
+
+
+            {/* DIVIDER */}
             <div className="login-divider">
               <span>OR</span>
             </div>
 
-            <div className="login-signup">
-              <p>Don't have an account?</p>
 
-              <Link to="/signup">
-                Create Account
-              </Link>
+            {/* SIGN UP */}
+            <div className="signup-text">
+              Don't have an account?
+              <a href="#signup"> Create Account</a>
             </div>
 
-          </div>
+          </form>
 
         </div>
 
       </div>
 
-    </div>
+    </section>
   );
-};
+}
 
 export default Login;

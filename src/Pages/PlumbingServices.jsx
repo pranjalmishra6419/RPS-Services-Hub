@@ -4,11 +4,14 @@ import Footer from '../Components/Footer'
 import SubServicesHeader from '../Components/SubServicesHeader'
 
 const PlumbingServices = () => {
+  
   return (
     <>
     <Header/>
     <SubServicesHeader/>
-    <div className=''></div>
+    <div className=''>
+      <img src="image/subcli,jpg" alt="" />
+    </div>
     <Footer/>
     </>
   )

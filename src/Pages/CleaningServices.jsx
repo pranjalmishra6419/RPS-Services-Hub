@@ -2,6 +2,7 @@ import React from 'react'
 import "./CSS/CleaningServices.css";
 import Header from '../Components/Header';
 import SubServicesHeader from '../Components/SubServicesHeader';
+import '../Pages/CSS/CleaningServices.css'
 
 const CleaningServices = () => {
   return (
@@ -18,6 +19,9 @@ const CleaningServices = () => {
         </p>
     </div>
 </section> */}
+    <div className='cleaning-hero-img'>
+        <img src="image/subcli.jpg" alt="" />
+    </div>
 
 
 <section class="cleaning-services-section">
@@ -147,7 +151,7 @@ const CleaningServices = () => {
         </div>
 
 
-        <div class="cleaning-service-box">
+        {/* <div class="cleaning-service-box">
             <div class="cleaning-service-image">
                 <img src="https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&w=800&q=85" alt="Window Cleaning"/>
             </div>
@@ -163,10 +167,10 @@ const CleaningServices = () => {
                     <a href="#">Book Now</a>
                 </div>
             </div>
-        </div>
+        </div> */}
 
 
-        <div class="cleaning-service-box">
+        {/* <div class="cleaning-service-box">
             <div class="cleaning-service-image">
                 <img src="https://images.unsplash.com/photo-1527519944912-7f5d8e3f0c3b?auto=format&fit=crop&w=800&q=85" alt="Move Cleaning"/>
             </div>
@@ -182,7 +186,7 @@ const CleaningServices = () => {
                     <a href="#">Book Now</a>
                 </div>
             </div>
-        </div>
+        </div> */}
 
     </div>
 </section>

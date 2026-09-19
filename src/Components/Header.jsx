@@ -64,9 +64,17 @@ const Header = () => {
       </nav>
 
       {/* Login Button */}
-      <button className="servicehub-login">
-        Login
-      </button>
+      <button className="btn"><NavLink
+          to="/Loging"
+          className={({ isActive }) =>
+            `servicehub-link ${isActive ? "servicehub-active" : ""}`
+          }
+        >
+          Login
+        </NavLink>
+        </button>
+      
+      
 
     </header>
   );
