@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../Pages/CSS/Login.css";
+import Header from '../Components/Header'
 
 function Login() {
   const [showPassword, setShowPassword] = useState(false);
@@ -10,6 +11,8 @@ function Login() {
   };
 
   return (
+    <>
+    <Header/>
     <section className="login-page">
 
       <div className="login-wrapper">
@@ -170,6 +173,7 @@ function Login() {
       </div>
 
     </section>
+    </>
   );
 }
 

@@ -84,7 +84,7 @@
 .servicehub-login {
     border: none;
     background: white;
-    color: #0b0a0a;
+    color: white;
     padding: 11px 20px;
     border-radius: 8px;
     font-size: 14px;
@@ -93,17 +93,14 @@
     transition: 0.25s ease;
 }
 .btn{
-    width: 60px;
-    height: 40px;
-    background-color: #1A454A;
+    background-color: white;
+    font-size: 16px;
+    color: black;
     border: none;
 }
 .btn:hover{
     background-color: #16a34a;
+    color: white;
     transform: translateY(-2px);
     box-shadow: 0 7px 18px rgba(22, 163, 74, 0.18);
-}
-
-.servicehub-login:active {
-    transform: translateY(0);
 }

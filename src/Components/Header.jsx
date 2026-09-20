@@ -64,15 +64,20 @@ const Header = () => {
       </nav>
 
       {/* Login Button */}
-      <button className="btn"><NavLink
-          to="/Loging"
+      
+        
+            <NavLink
+          to="/loging"
           className={({ isActive }) =>
             `servicehub-link ${isActive ? "servicehub-active" : ""}`
           }
         >
-          Login
+          <div className="servicehub-login btn">
+            Login 
+          </div>
         </NavLink>
-        </button>
+       
+
       
       
 

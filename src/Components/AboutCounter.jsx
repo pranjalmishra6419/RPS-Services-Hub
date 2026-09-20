@@ -1,10 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import '../Components/Css/AboutCounterr.css'
 
-/* ------------------------------------------------------------------ */
-/*  DATA — apni numbers yahan daal dijiye                              */
-/* ------------------------------------------------------------------ */
-
 const STATS = [
   { end: 1240, suffix: "+", label: "Job Done" },
   { end: 1055, suffix: "+", label: "Current Clients" },

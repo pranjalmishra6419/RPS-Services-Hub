@@ -1,12 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
+import aos from 'aos'
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
 import SubServicesHeader from "../Components/SubServicesHeader";
 import CleaningServices from "./CleaningServices";
 import "./CSS/Services.css";
 import ServiceCountPages from "../Components/ServiceCountPages";
+import CtaServices from "../Components/CtaServices";
 
 const Services = () => {
+  useEffect(()=>{
+    aos.init()
+  })
   return (
     <>
       <Header />
@@ -17,7 +22,7 @@ const Services = () => {
         <img src="/image/services-hero-final2.png" alt="" />
       </section>
       {/* cotegory */}
-      <section className="service-section">
+      <section className="service-section"  data-aos="fade-down-right" data-aos-duration="800">
         <div className="service-image">
           <img
             src="https://static.vecteezy.com/system/resources/thumbnails/016/798/947/small_2x/business-service-online-digital-technology-businessman-touching-digital-globe-hologram-quality-business-relationship-customer-service-advice-and-support-technology-robot-assistance-online-services-photo.jpg"
@@ -69,7 +74,7 @@ const Services = () => {
           </a>
         </div>
       </section>
-       <section className="service-section">
+       <section className="service-section" data-aos="fade-down-left" data-aos-duration="800">
         
 
         <div className="service-content">
@@ -122,7 +127,7 @@ const Services = () => {
           />
         </div>
       </section>
-      <section className="service-section">
+      <section className="service-section" data-aos="fade-down-right" data-aos-duration="800">
         <div className="service-image">
           <img
             src="https://static.vecteezy.com/system/resources/thumbnails/016/798/947/small_2x/business-service-online-digital-technology-businessman-touching-digital-globe-hologram-quality-business-relationship-customer-service-advice-and-support-technology-robot-assistance-online-services-photo.jpg"
@@ -174,7 +179,7 @@ const Services = () => {
           </a>
         </div>
       </section>
-       <section className="service-section">
+       <section className="service-section" data-aos="fade-down-left" data-aos-duration="800">
         
 
         <div className="service-content">
@@ -227,7 +232,7 @@ const Services = () => {
           />
         </div>
       </section>
-      <section className="service-section">
+      <section className="service-section" data-aos="fade-down-right" data-aos-duration="800">
         <div className="service-image">
           <img
             src="https://static.vecteezy.com/system/resources/thumbnails/016/798/947/small_2x/business-service-online-digital-technology-businessman-touching-digital-globe-hologram-quality-business-relationship-customer-service-advice-and-support-technology-robot-assistance-online-services-photo.jpg"
@@ -279,7 +284,7 @@ const Services = () => {
           </a>
         </div>
       </section>
-       <section className="service-section">
+       <section className="service-section" data-aos="fade-down-left" data-aos-duration="800">
         
 
         <div className="service-content">
@@ -338,7 +343,7 @@ const Services = () => {
           <span>ONE PLATFORM</span>
           <h2>One Place For Different Services</h2>
           <p>
-            CareFlow brings different everyday services together so customers
+            <b> Services Hub</b> brings different everyday services together so customers
             don't have to search for different providers for every requirement.
           </p>
 
@@ -420,6 +425,7 @@ const Services = () => {
           </div>
         </div>
       </section>
+      <CtaServices/>
 
       <Footer />
     </>

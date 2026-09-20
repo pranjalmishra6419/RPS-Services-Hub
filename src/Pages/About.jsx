@@ -1,9 +1,13 @@
-import React from "react";
-import "../Pages/Css/About.css";
+import React, { useEffect } from "react";
+import aos from 'aos'
+import "./CSS/About.css";
 import AboutCounter from '../Components/AboutCounter'
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
 import ServiceCountPages from "../Components/ServiceCountPages";
+
+
+
 
 const services = [
   {
@@ -80,14 +84,14 @@ const features = [
 ];
 
 const About = () => {
+  useEffect(()=>{
+    aos.init()
+  })
   return (
     <>
     <Header/>
     <main className="about-page">
-
-      {/* ================= HERO ================= */}
-
-      <section className="about-hero">
+      <section className="about-hero" data-aos="fade-right" data-aos-duration="2500">
 
         <div className="hero-container">
 
@@ -122,19 +126,6 @@ const About = () => {
               alt="CareFlow Services"
             />
 
-            {/* <div className="hero-card">
-
-              <div className="hero-card-icon">
-                ✓
-              </div>
-
-              <div>
-                <h4>Simple & Reliable</h4>
-                <p>Services at your fingertips</p>
-              </div>
-
-            </div> */}
-
           </div>
 
         </div>
@@ -143,7 +134,7 @@ const About = () => {
 
 
       {/* ================= WHO WE ARE ================= */}
-<section className="story-section" id="who-we-are">
+<section className="story-section" id="who-we-are" data-aos="zoom-in-down" data-aos-duration="1000">
   <div className="section-container story-wrapper">
 
     {/* LEFT CONTENT */}
@@ -348,14 +339,14 @@ const About = () => {
 
           <div className="why-grid">
 
-            <div className="why-image">
+            {/* <div className="why-image">
 
               <img
                 src="https://images.unsplash.com/photo-1521791055366-0d553872125f?auto=format&fit=crop&w=1100&q=85"
                 alt="CareFlow Provider"
               />
 
-            </div>
+            </div> */}
 
 
             <div className="why-content">
@@ -495,6 +486,7 @@ const About = () => {
 
 
     </main>
+    
     <Footer/>
     </>
   );

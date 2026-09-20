@@ -1,0 +1,110 @@
+.cleaning-services-section {
+    padding: 15px 6%;
+    /* background: #f7f7f8; */
+}
+
+.cleaning-section-heading {
+    max-width: 700px;
+    margin: 0 auto 48px;
+    text-align: center;
+}
+.cleaning-section-heading span{
+    font-size: x-large;
+}
+
+.cleaning-section-heading h2 {
+    color: rgb(59, 176, 0);
+    font-size: 36px;
+    margin: 12px 0;
+}
+
+.cleaning-section-heading p {
+    color: #111214;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.cleaning-services-grid {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.cleaning-service-box {
+    background: #ffffff;
+    border: 1px solid #e3ebeb;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+
+.cleaning-service-box:hover {
+    transform: translateY(-6px);
+    border-color: #10B981;
+    box-shadow: 0 14px 32px rgba(18, 52, 59, 0.09);
+}
+
+.cleaning-service-image {
+    height: 220px;
+    overflow: hidden;
+}
+
+.cleaning-service-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s ease;
+}
+
+.cleaning-service-box:hover .cleaning-service-image img {
+    transform: scale(1.06);
+}
+
+.cleaning-service-info {
+    padding: 23px;
+}
+
+.cleaning-service-info > span {
+    color: #10B981;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.cleaning-service-info h3 {
+    color: #1A454A;
+    font-size: 20px;
+    margin: 8px 0 10px;
+}
+
+.cleaning-service-info p {
+    color: #6B7280;
+    font-size: 13px;
+    line-height: 1.7;
+    min-height: 65px;
+}
+
+.cleaning-service-bottom {
+    margin-top: 20px;
+    padding-top: 17px;
+    border-top: 1px solid #edf1f1;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.cleaning-service-bottom strong {
+    color: #12343B;
+    font-size: 12px;
+}
+
+.cleaning-service-bottom a {
+    color: #10B981;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+}

@@ -1,28 +1,18 @@
-
-
 .about-page {
   width: 100%;
   overflow: hidden;
   background: #fff;
   color: #172033;
-  font-family: "Inter", "Segoe UI", sans-serif;
 }
-
 .section-container {
   width: 90%;
   max-width: 1180px;
-  margin: auto;
+  margin:  auto;
 }
-
 p {
   color: #667085;
   line-height: 1.7;
 }
-
-
-/* =====================================================
-   COMMON HEADING
-===================================================== */
 
 .small-title {
   display: inline-block;
@@ -42,7 +32,7 @@ h4 {
 .about-hero {
   position: relative;
   min-height: 650px;
-  padding: 110px 0 80px;
+  padding: 0px 0 20px;
   background: #f7faff;
   display: flex;
   align-items: center;
@@ -383,34 +373,6 @@ h4 {
 }
 
 
-/* =========================================
-   ANIMATION
-========================================= */
-
-@keyframes storyLeftIn {
-  from {
-    opacity: 0;
-    transform: translateX(-30px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes processIn {
-  from {
-    opacity: 0;
-    transform: translateX(30px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
 .story-heading {
   animation: storyLeftIn 0.8s ease-out both;
 }
@@ -430,89 +392,6 @@ h4 {
 .process-card:nth-child(4) {
   animation-delay: 0.45s;
 }
-
-
-/* =========================================
-   RESPONSIVE
-========================================= */
-
-@media (max-width: 900px) {
-
-  .story-wrapper {
-    grid-template-columns: 1fr;
-    gap: 45px;
-  }
-
-  .story-heading {
-    max-width: 700px;
-  }
-
-  .story-heading h2 {
-    font-size: 38px;
-  }
-}
-
-
-@media (max-width: 576px) {
-
-  .story-section {
-    padding: 60px 0;
-  }
-
-  .story-wrapper {
-    gap: 35px;
-  }
-
-  .story-heading h2 {
-    font-size: 32px;
-  }
-
-  .story-heading p {
-    font-size: 15px;
-  }
-
-  .process-card {
-    grid-template-columns: 40px 48px 1fr;
-    gap: 12px;
-    padding: 15px;
-  }
-
-  .process-card .story-icon {
-    width: 48px;
-    height: 48px;
-    font-size: 19px;
-  }
-
-  .process-card h3 {
-    font-size: 17px;
-  }
-
-  .process-card p {
-    font-size: 13px;
-  }
-
-  .process-line {
-    left: 20px;
-  }
-}
-
-
-@media (prefers-reduced-motion: reduce) {
-
-  .story-heading,
-  .process-card {
-    animation: none;
-  }
-
-  .story-btn,
-  .story-icon,
-  .process-card {
-    transition: none;
-  }
-}
-/* =========================================
-   STATS SECTION
-========================================= */
 
 .stats-section {
   padding: 75px 0;
@@ -561,24 +440,6 @@ h4 {
   color: #748078;
 }
 
-
-/* =========================================
-   HEADING ANIMATION
-========================================= */
-
-@keyframes statsHeadingReveal {
-
-  from {
-    opacity: 0;
-    transform: translateY(-25px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-
-}
 
 
 /* =========================================
@@ -649,24 +510,6 @@ h4 {
   animation-delay: 0.6s;
 }
 
-
-/* =========================================
-   CARD REVEAL
-========================================= */
-
-@keyframes statCardReveal {
-
-  from {
-    opacity: 0;
-    transform: translateY(35px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-
-}
 
 
 /* =========================================
@@ -811,21 +654,6 @@ h4 {
 }
 
 
-/* Number animation */
-
-@keyframes numberPop {
-
-  from {
-    opacity: 0;
-    transform: scale(0.7);
-  }
-
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
-
-}
 
 
 .stat-content p {
@@ -871,95 +699,6 @@ h4 {
   animation-delay: 0.7s;
 }
 
-@keyframes iconReveal {
-
-  from {
-    opacity: 0;
-    transform: scale(0.5) rotate(-15deg);
-  }
-
-  to {
-    opacity: 1;
-    transform: scale(1) rotate(0);
-  }
-
-}
-
-
-/* =========================================
-   RESPONSIVE
-========================================= */
-
-@media (max-width: 1050px) {
-
-  .stats-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-}
-
-
-@media (max-width: 600px) {
-
-  .stats-section {
-    padding: 55px 0;
-  }
-
-  .stats-heading {
-    margin-bottom: 30px;
-  }
-
-  .stats-heading h2 {
-    font-size: 29px;
-  }
-
-  .stats-heading p {
-    font-size: 14px;
-  }
-
-  .stats-grid {
-    grid-template-columns: 1fr;
-    gap: 14px;
-  }
-
-  .stat-box {
-    min-height: 120px;
-    padding: 20px;
-  }
-
-  .stat-icon {
-    width: 50px;
-    height: 50px;
-  }
-
-}
-
-
-/* =========================================
-   REDUCED MOTION
-========================================= */
-
-@media (prefers-reduced-motion: reduce) {
-
-  .stats-heading,
-  .stat-box,
-  .stat-icon,
-  .stat-content h2 {
-    animation: none !important;
-    opacity: 1;
-  }
-
-  .stat-box,
-  .stat-icon {
-    transition: none;
-  }
-
-}
-
-
-/* =====================================================
-   MISSION
-===================================================== */
 
 .mission-section {
   padding: 110px 0;
@@ -1450,3 +1189,15 @@ h4 {
   color: #172033;
   font-size: 13px;
 }
+
+
+
+
+
+
+
+
+
+
+
+

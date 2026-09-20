@@ -18,6 +18,8 @@ import ElectricalServices from './Pages/ElectricalServices'
 import TechServices from './Pages/TechServices'
 import VehicleServices from './Pages/VehicleServices'
 import CleaningServices from './Pages/CleaningServices'
+import CtaServices from './Components/CtaServices'
+import SubServicesType from './Components/SubServicesType'
 
 const App = () => {
   return (
@@ -29,6 +31,8 @@ const App = () => {
             <Route path='/services' element={<Services/>} />  
             <Route path='/loging' element={<Login/>} /> 
             <Route path='/blog' element={<Blog/>} /> 
+            <Route path='/cta' element={<CtaServices/>} /> 
+            <Route path='/sst' element={<SubServicesType/>} /> 
             <Route path='/contact' element={<Contact/>} /> 
 
             <Route path='/plumbingservices' element={<PlumbingServices/>}/>

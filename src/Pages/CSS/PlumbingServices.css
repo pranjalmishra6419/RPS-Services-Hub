@@ -1,131 +1,23 @@
-.plumbing-section {
-    padding: 150px ;
-    background: #F5F8F8;
-    border-bottom: 1px solid #e4eeee;
-}
-
-/* Heading */
-
-.plumbing-heading {
-  text-align: center;
-  margin-bottom: 55px;
-}
-
-.plumbing-heading h4 {
-  color: #10b981;
-  font-size: 15px;
-  letter-spacing: 2px;
-  margin-bottom: 12px;
-}
-
-.plumbing-heading h1 {
-  color: #1a454a;
-  font-size: 42px;
-  margin: 0 0 15px;
-}
-
-.plumbing-heading p {
-  color: #526d70;
-  font-size: 17px;
-  max-width: 750px;
-  margin: auto;
-  line-height: 1.7;
-}
-
-/* Cards Container */
-
-.plumbing-container {
-  max-width: 1500px;
-  margin: auto;
-
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-}
-
-/* Card */
-
-.plumbing-card {
-  background: #ffffff;
-  border: 1px solid #dce5e5;
-  border-radius: 15px;
-  overflow: hidden;
-
-  transition: 0.3s ease;
-}
-
-.plumbing-card:hover {
-  transform: translateY(-7px);
-  box-shadow: 0 12px 30px rgba(26, 69, 74, 0.12);
-}
-
-/* Image */
-
-.plumbing-card img {
+.plumbing-head-image {
   width: 100%;
-  height: 275px;
+  height: 420px;
+  overflow: hidden;
+}
+
+.plumbing-head-image img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   display: block;
 }
 
-/* Content */
-
-.plumbing-content {
-  padding: 30px 28px 24px;
+.plumbing-types {
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 60px 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
 }
-
-.plumbing-content span {
-  color: #10b981;
-  font-size: 14px;
-  font-weight: bold;
-  letter-spacing: 1px;
-}
-
-.plumbing-content h2 {
-  color: #12343b;
-  font-size: 28px;
-  margin: 10px 0 12px;
-}
-
-.plumbing-content p {
-  color: #526d70;
-  font-size: 16px;
-  line-height: 1.7;
-  min-height: 78px;
-  margin: 0;
-}
-
-/* Bottom */
-
-.plumbing-bottom {
-  border-top: 1px solid #e2e8e8;
-
-  margin-top: 25px;
-  padding-top: 20px;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.plumbing-bottom strong {
-  color: #12343b;
-  font-size: 16px;
-}
-
-.plumbing-bottom button {
-  border: none;
-  background: transparent;
-
-  color: #10b981;
-  font-size: 16px;
-  font-weight: bold;
-
-  cursor: pointer;
-  transition: 0.3s ease;
-}
-
-.plumbing-bottom button:hover {
-  color: #1a454a;
-  transform: translateX(3px);
-}
+    

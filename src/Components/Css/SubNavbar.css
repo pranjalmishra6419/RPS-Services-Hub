@@ -1,11 +1,11 @@
 .service-subnav {
   width: 100%;
-  min-height: 60px;
-  padding: 10px 5%;
+  min-height: 30px;
+  padding: 10px 15%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #1f1d39;
+  background: #272547;
   border-bottom: 1px solid #e5e7eb;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   gap: 20px;
@@ -22,8 +22,8 @@
   position: relative;
   color: #ffffff;
   text-decoration: none;
-  font-size: 14px;
-  font-weight: 400;
+  font-size: 12px;
+  font-weight: 300;
   padding: 10px 0;
   transition: 0.3s ease;
 }

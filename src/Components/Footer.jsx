@@ -8,9 +8,7 @@ const Footer = () => {
 
     <div className="cf-footer-main">
 
-        <div className="cf-footer-brand">
-            map..............
-        </div>
+        
 
         <div className="cf-footer-column">
             <h3>Our Services</h3>
@@ -59,6 +57,11 @@ const Footer = () => {
                 <a href="#">◎</a>
             </div>
             
+        </div>
+        <div className="cf-footer-brand">
+            <div className="footer-map">
+                <iframe src="https://www.google.com/maps/embed?pb=YOUR_MAP_CODE" />
+            </div>
         </div>
 
     </div>
