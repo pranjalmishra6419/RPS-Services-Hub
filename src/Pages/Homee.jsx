@@ -51,7 +51,7 @@ const Home = () => {
       {/* Hero */}
       <section className="careflow-hero" id="home">
         <div className="careflow-hero-content" data-aos="fade-down-right" 
-  data-aos-duration="2500">
+                data-aos-duration="2500">
 
           <div className="careflow-badge">
             <FiCheckCircle />
