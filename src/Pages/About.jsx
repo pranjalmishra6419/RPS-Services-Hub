@@ -1,6 +1,14 @@
 import React, { useEffect } from "react";
 import aos from 'aos'
 import "./CSS/About.css";
+import {
+  FaBolt,
+  FaSearch,
+  FaUser,
+  FaCalendarAlt,
+  FaMapMarkerAlt,
+  FaStar,
+} from "react-icons/fa";
 import AboutCounter from '../Components/AboutCounter'
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
@@ -52,32 +60,32 @@ const problems = [
 
 const features = [
   {
-    icon: "⚡",
+    icon: <FaBolt />,
     title: "Save Time",
     text: "Find services without wasting time searching everywhere.",
   },
   {
-    icon: "🔎",
+    icon: <FaSearch />,
     title: "Easy Discovery",
     text: "Explore different services in one convenient place.",
   },
   {
-    icon: "👤",
+    icon: <FaUser />,
     title: "Provider Choice",
     text: "Choose a provider according to your requirements.",
   },
   {
-    icon: "📅",
+    icon: <FaCalendarAlt />,
     title: "Easy Booking",
     text: "Make the service booking process simple and quick.",
   },
   {
-    icon: "📍",
+    icon: <FaMapMarkerAlt />,
     title: "At Your Location",
     text: "Get everyday services where you need them.",
   },
   {
-    icon: "⭐",
+    icon: <FaStar />,
     title: "Better Experience",
     text: "Enjoy a smoother and more organized experience.",
   },
@@ -98,7 +106,7 @@ const About = () => {
           <div className="hero-content">
 
             <span className="small-title">
-              ABOUT CAREFLOW
+              ABOUT SERVICES HUB
             </span>
 
             <h1>
@@ -113,7 +121,7 @@ const About = () => {
             </p>
 
             <a href="#who-we-are" className="main-btn">
-              Discover CareFlow
+              Discover Services Hub
               <span>→</span>
             </a>
 
@@ -352,7 +360,7 @@ const About = () => {
             <div className="why-content">
 
               <span className="small-title">
-                WHY CAREFLOW?
+                WHY SERVICES HUB?
               </span>
 
               <h2>

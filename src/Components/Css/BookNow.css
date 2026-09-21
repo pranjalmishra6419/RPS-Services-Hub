@@ -1,0 +1,162 @@
+.book-service-page {
+  min-height: 100vh;
+  width: 100%;
+  background: #f4faf7;
+  display: flex;
+  align-items: center;
+  padding: 45px 6%;
+  box-sizing: border-box;
+}
+
+.book-service-container {
+  width: 100%;
+  max-width: 1250px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.book-service-left {
+  color: #1a454a;
+}
+
+.book-service-left > span {
+  color: #16a34a;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.book-service-left h1 {
+  font-size: 48px;
+  line-height: 1.15;
+  margin: 15px 0;
+}
+
+.book-service-left > p {
+  max-width: 500px;
+  color: #5f6f72;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.book-service-info {
+  margin-top: 30px;
+  display: flex;
+  gap: 14px;
+}
+
+.book-service-info div {
+  background: white;
+  padding: 16px;
+  border-radius: 10px;
+  flex: 1;
+  box-shadow: 0 7px 20px rgba(26, 69, 74, 0.08);
+}
+
+.book-service-info strong {
+  color: #16a34a;
+  font-size: 18px;
+}
+
+.book-service-info p {
+  margin: 6px 0 0;
+  color: #1a454a;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.book-service-card {
+  background: white;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 12px 35px rgba(26, 69, 74, 0.12);
+}
+
+.book-service-card-head span {
+  color: #16a34a;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.book-service-card-head h2 {
+  color: #1a454a;
+  font-size: 28px;
+  margin: 6px 0;
+}
+
+.book-service-card-head p {
+  color: #718083;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.book-service-form-group {
+  margin-bottom: 14px;
+}
+
+.book-service-form-group label {
+  display: block;
+  color: #1a454a;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.book-service-form-group select,
+.book-service-form-group input,
+.book-service-form-group textarea {
+  width: 100%;
+  padding: 9px 12px;
+  border: 1px solid #dce7e3;
+  border-radius: 8px;
+  outline: none;
+  font-size: 13px;
+  font-family: inherit;
+  box-sizing: border-box;
+  background: white;
+}
+
+.book-service-form-group select,
+.book-service-form-group input {
+  height: 40px;
+}
+
+.book-service-form-group textarea {
+  height: 65px;
+  resize: none;
+}
+
+.book-service-form-group select:focus,
+.book-service-form-group input:focus,
+.book-service-form-group textarea:focus {
+  border-color: #16a34a;
+}
+
+.book-service-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.book-service-btn {
+  width: 100%;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  background: #16a34a;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.book-service-btn:hover {
+  background: #1a454a;
+  transform: translateY(-2px);
+}
+

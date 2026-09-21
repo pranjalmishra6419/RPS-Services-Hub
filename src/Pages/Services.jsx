@@ -22,321 +22,251 @@ const Services = () => {
         <img src="/image/services-hero-final2.png" alt="" />
       </section>
       {/* cotegory */}
-      <section className="service-section"  data-aos="fade-down-right" data-aos-duration="800">
-        <div className="service-image">
-          <img
-            src="https://static.vecteezy.com/system/resources/thumbnails/016/798/947/small_2x/business-service-online-digital-technology-businessman-touching-digital-globe-hologram-quality-business-relationship-customer-service-advice-and-support-technology-robot-assistance-online-services-photo.jpg"
-            alt="Moving and Shifting Service"
-          />
-        </div>
+{/* ================= MOVING & SHIFTING ================= */}
 
-        <div className="service-content">
-          <span className="service-tag">01 • TRANSPORT</span>
+<section
+  className="service-section"
+  data-aos="fade-down-right"
+  data-aos-duration="800"
+>
+  <div className="service-image">
+    <img
+      src="https://images.unsplash.com/photo-1600518464441-9154a4dea21b?auto=format&fit=crop&w=1000&q=85"
+      alt="Moving and Shifting Service"
+    />
+  </div>
 
-          <h2>
-            <span>Moving</span> And <span>Shifting</span> Services
-          </h2>
+  <div className="service-content">
+    <span className="service-tag">01 • MOVING</span>
 
-          <p>
-            Get reliable and professional help for your moving, packing and
-            shifting needs. We make your move simple, safe and stress-free.
-          </p>
+    <h2>
+      <span>Moving</span> And <span>Shifting</span> Services
+    </h2>
 
-          <div className="service-list">
-            <div className="service-item">
-              <span>✓</span>
-              <p>Transport</p>
-            </div>
+    <p>
+      Get reliable support for packing, transportation and shifting.
+      We make your move simple, organized and stress-free.
+    </p>
 
-            <div className="service-item">
-              <span>✓</span>
-              <p>Workers</p>
-            </div>
+    <div className="service-list">
+      <div className="service-item"><span>✓</span><p>Home Shifting</p></div>
+      <div className="service-item"><span>✓</span><p>Office Shifting</p></div>
+      <div className="service-item"><span>✓</span><p>Packing Services</p></div>
+      <div className="service-item"><span>✓</span><p>Loading & Unloading</p></div>
+      <div className="service-item"><span>✓</span><p>Furniture Moving</p></div>
+    </div>
 
-            <div className="service-item">
-              <span>✓</span>
-              <p>Packing Services</p>
-            </div>
+    <a href="/movinsiftingservices" className="service-btn">
+      View Moving Services →
+    </a>
+  </div>
+</section>
 
-            <div className="service-item">
-              <span>✓</span>
-              <p>Loading & Unloading</p>
-            </div>
 
-            <div className="service-item">
-              <span>✓</span>
-              <p>Full Moving Package</p>
-            </div>
-          </div>
+{/* ================= CLEANING ================= */}
 
-          <a href="#" className="service-btn">
-            View Home Services →
-          </a>
-        </div>
-      </section>
-       <section className="service-section" data-aos="fade-down-left" data-aos-duration="800">
-        
+<section
+  className="service-section service-reverse"
+  data-aos="fade-down-left"
+  data-aos-duration="800"
+>
+  <div className="service-image">
+    <img
+      src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1000&q=85"
+      alt="Cleaning Service"
+    />
+  </div>
 
-        <div className="service-content">
-          <span className="service-tag">01 • TRANSPORT</span>
+  <div className="service-content">
+    <span className="service-tag">02 • CLEANING</span>
 
-          <h2>
-            <span>Moving</span> And <span>Shifting</span> Services
-          </h2>
+    <h2>
+      <span>Cleaning</span> Services For Your <span>Home</span>
+    </h2>
 
-          <p>
-            Get reliable and professional help for your moving, packing and
-            shifting needs. We make your move simple, safe and stress-free.
-          </p>
+    <p>
+      Keep your home and workplace fresh, clean and comfortable with
+      convenient professional cleaning services.
+    </p>
 
-          <div className="service-list">
-            <div className="service-item">
-              <span>✓</span>
-              <p>Transport</p>
-            </div>
+    <div className="service-list">
+      <div className="service-item"><span>✓</span><p>Home Cleaning</p></div>
+      <div className="service-item"><span>✓</span><p>Bathroom Cleaning</p></div>
+      <div className="service-item"><span>✓</span><p>Kitchen Cleaning</p></div>
+      <div className="service-item"><span>✓</span><p>Sofa Cleaning</p></div>
+      <div className="service-item"><span>✓</span><p>Deep Cleaning</p></div>
+    </div>
 
-            <div className="service-item">
-              <span>✓</span>
-              <p>Workers</p>
-            </div>
+    <a href="/cleaningservices" className="service-btn">
+      View Cleaning Services →
+    </a>
+  </div>
+</section>
 
-            <div className="service-item">
-              <span>✓</span>
-              <p>Packing Services</p>
-            </div>
 
-            <div className="service-item">
-              <span>✓</span>
-              <p>Loading & Unloading</p>
-            </div>
+{/* ================= VEHICLE ================= */}
 
-            <div className="service-item">
-              <span>✓</span>
-              <p>Full Moving Package</p>
-            </div>
-          </div>
+<section
+  className="service-section"
+  data-aos="fade-down-right"
+  data-aos-duration="800"
+>
+  <div className="service-image">
+    <img
+      src="https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?auto=format&fit=crop&w=1000&q=85"
+      alt="Vehicle Service"
+    />
+  </div>
 
-          <a href="#" className="service-btn">
-            View Home Services →
-          </a>
-        </div>
-        <div className="service-image">
-          <img
-            src="https://static.vecteezy.com/system/resources/thumbnails/016/798/947/small_2x/business-service-online-digital-technology-businessman-touching-digital-globe-hologram-quality-business-relationship-customer-service-advice-and-support-technology-robot-assistance-online-services-photo.jpg"
-            alt="Moving and Shifting Service"
-          />
-        </div>
-      </section>
-      <section className="service-section" data-aos="fade-down-right" data-aos-duration="800">
-        <div className="service-image">
-          <img
-            src="https://static.vecteezy.com/system/resources/thumbnails/016/798/947/small_2x/business-service-online-digital-technology-businessman-touching-digital-globe-hologram-quality-business-relationship-customer-service-advice-and-support-technology-robot-assistance-online-services-photo.jpg"
-            alt="Moving and Shifting Service"
-          />
-        </div>
+  <div className="service-content">
+    <span className="service-tag">03 • VEHICLE</span>
 
-        <div className="service-content">
-          <span className="service-tag">01 • TRANSPORT</span>
+    <h2>
+      <span>Vehicle</span> Care & <span>Maintenance</span>
+    </h2>
 
-          <h2>
-            <span>Moving</span> And <span>Shifting</span> Services
-          </h2>
+    <p>
+      Take care of your car and two-wheeler with convenient cleaning,
+      maintenance and basic vehicle support services.
+    </p>
 
-          <p>
-            Get reliable and professional help for your moving, packing and
-            shifting needs. We make your move simple, safe and stress-free.
-          </p>
+    <div className="service-list">
+      <div className="service-item"><span>✓</span><p>Car Washing</p></div>
+      <div className="service-item"><span>✓</span><p>Interior Cleaning</p></div>
+      <div className="service-item"><span>✓</span><p>Bike Service</p></div>
+      <div className="service-item"><span>✓</span><p>Battery Service</p></div>
+      <div className="service-item"><span>✓</span><p>Tyre Service</p></div>
+    </div>
 
-          <div className="service-list">
-            <div className="service-item">
-              <span>✓</span>
-              <p>Transport</p>
-            </div>
+    <a href="/vehicleservices" className="service-btn">
+      View Vehicle Services →
+    </a>
+  </div>
+</section>
 
-            <div className="service-item">
-              <span>✓</span>
-              <p>Workers</p>
-            </div>
 
-            <div className="service-item">
-              <span>✓</span>
-              <p>Packing Services</p>
-            </div>
+{/* ================= PLUMBING ================= */}
 
-            <div className="service-item">
-              <span>✓</span>
-              <p>Loading & Unloading</p>
-            </div>
+<section
+  className="service-section service-reverse"
+  data-aos="fade-down-left"
+  data-aos-duration="800"
+>
+  <div className="service-image">
+    <img
+      src="https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?auto=format&fit=crop&w=1000&q=85"
+      alt="Plumbing Service"
+    />
+  </div>
 
-            <div className="service-item">
-              <span>✓</span>
-              <p>Full Moving Package</p>
-            </div>
-          </div>
+  <div className="service-content">
+    <span className="service-tag">04 • PLUMBING</span>
 
-          <a href="#" className="service-btn">
-            View Home Services →
-          </a>
-        </div>
-      </section>
-       <section className="service-section" data-aos="fade-down-left" data-aos-duration="800">
-        
+    <h2>
+      <span>Plumbing</span> Repair & <span>Installation</span>
+    </h2>
 
-        <div className="service-content">
-          <span className="service-tag">01 • TRANSPORT</span>
+    <p>
+      Get quick and convenient plumbing support for common household
+      repairs, leaks, fittings and water-related problems.
+    </p>
 
-          <h2>
-            <span>Moving</span> And <span>Shifting</span> Services
-          </h2>
+    <div className="service-list">
+      <div className="service-item"><span>✓</span><p>Tap & Faucet Repair</p></div>
+      <div className="service-item"><span>✓</span><p>Sink Repair</p></div>
+      <div className="service-item"><span>✓</span><p>Pipe Repair</p></div>
+      <div className="service-item"><span>✓</span><p>Drain Cleaning</p></div>
+      <div className="service-item"><span>✓</span><p>Water Leakage Repair</p></div>
+    </div>
 
-          <p>
-            Get reliable and professional help for your moving, packing and
-            shifting needs. We make your move simple, safe and stress-free.
-          </p>
+    <a href="/plumbingservices" className="service-btn">
+      View Plumbing Services →
+    </a>
+  </div>
+</section>
 
-          <div className="service-list">
-            <div className="service-item">
-              <span>✓</span>
-              <p>Transport</p>
-            </div>
 
-            <div className="service-item">
-              <span>✓</span>
-              <p>Workers</p>
-            </div>
+{/* ================= TECH SERVICES ================= */}
 
-            <div className="service-item">
-              <span>✓</span>
-              <p>Packing Services</p>
-            </div>
+<section
+  className="service-section"
+  data-aos="fade-down-right"
+  data-aos-duration="800"
+>
+  <div className="service-image">
+    <img
+      src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1000&q=85"
+      alt="Tech Services"
+    />
+  </div>
 
-            <div className="service-item">
-              <span>✓</span>
-              <p>Loading & Unloading</p>
-            </div>
+  <div className="service-content">
+    <span className="service-tag">05 • TECHNOLOGY</span>
 
-            <div className="service-item">
-              <span>✓</span>
-              <p>Full Moving Package</p>
-            </div>
-          </div>
+    <h2>
+      <span>Tech</span> Services For <span>Everyday Needs</span>
+    </h2>
 
-          <a href="#" className="service-btn">
-            View Home Services →
-          </a>
-        </div>
-        <div className="service-image">
-          <img
-            src="https://static.vecteezy.com/system/resources/thumbnails/016/798/947/small_2x/business-service-online-digital-technology-businessman-touching-digital-globe-hologram-quality-business-relationship-customer-service-advice-and-support-technology-robot-assistance-online-services-photo.jpg"
-            alt="Moving and Shifting Service"
-          />
-        </div>
-      </section>
-      <section className="service-section" data-aos="fade-down-right" data-aos-duration="800">
-        <div className="service-image">
-          <img
-            src="https://static.vecteezy.com/system/resources/thumbnails/016/798/947/small_2x/business-service-online-digital-technology-businessman-touching-digital-globe-hologram-quality-business-relationship-customer-service-advice-and-support-technology-robot-assistance-online-services-photo.jpg"
-            alt="Moving and Shifting Service"
-          />
-        </div>
+    <p>
+      Get help with everyday technology problems, device setup and
+      basic technical support from convenient service providers.
+    </p>
 
-        <div className="service-content">
-          <span className="service-tag">01 • TRANSPORT</span>
+    <div className="service-list">
+      <div className="service-item"><span>✓</span><p>Computer Repair</p></div>
+      <div className="service-item"><span>✓</span><p>Laptop Support</p></div>
+      <div className="service-item"><span>✓</span><p>Wi-Fi Setup</p></div>
+      <div className="service-item"><span>✓</span><p>Printer Setup</p></div>
+      <div className="service-item"><span>✓</span><p>Device Installation</p></div>
+    </div>
 
-          <h2>
-            <span>Moving</span> And <span>Shifting</span> Services
-          </h2>
+    <a href="/techservices" className="service-btn">
+      View Tech Services →
+    </a>
+  </div>
+</section>
 
-          <p>
-            Get reliable and professional help for your moving, packing and
-            shifting needs. We make your move simple, safe and stress-free.
-          </p>
 
-          <div className="service-list">
-            <div className="service-item">
-              <span>✓</span>
-              <p>Transport</p>
-            </div>
+{/* ================= ELECTRICIAN ================= */}
 
-            <div className="service-item">
-              <span>✓</span>
-              <p>Workers</p>
-            </div>
+<section
+  className="service-section service-reverse"
+  data-aos="fade-down-left"
+  data-aos-duration="800"
+>
+  <div className="service-image">
+    <img
+      src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=1000&q=85"
+      alt="Electrician Service"
+    />
+  </div>
 
-            <div className="service-item">
-              <span>✓</span>
-              <p>Packing Services</p>
-            </div>
+  <div className="service-content">
+    <span className="service-tag">06 • ELECTRICAL</span>
 
-            <div className="service-item">
-              <span>✓</span>
-              <p>Loading & Unloading</p>
-            </div>
+    <h2>
+      <span>Electrical</span> Repair & <span>Installation</span>
+    </h2>
 
-            <div className="service-item">
-              <span>✓</span>
-              <p>Full Moving Package</p>
-            </div>
-          </div>
+    <p>
+      Get dependable electrical support for household repairs,
+      installations and common electrical maintenance needs.
+    </p>
 
-          <a href="#" className="service-btn">
-            View Home Services →
-          </a>
-        </div>
-      </section>
-       <section className="service-section" data-aos="fade-down-left" data-aos-duration="800">
-        
+    <div className="service-list">
+      <div className="service-item"><span>✓</span><p>Switch & Socket Repair</p></div>
+      <div className="service-item"><span>✓</span><p>Fan Installation</p></div>
+      <div className="service-item"><span>✓</span><p>Light Installation</p></div>
+      <div className="service-item"><span>✓</span><p>Wiring Support</p></div>
+      <div className="service-item"><span>✓</span><p>Electrical Repair</p></div>
+    </div>
 
-        <div className="service-content">
-          <span className="service-tag">01 • TRANSPORT</span>
+    <a href="/electricalservices" className="service-btn">
+      View Electrical Services →
+    </a>
+  </div>
+</section>
 
-          <h2>
-            <span>Moving</span> And <span>Shifting</span> Services
-          </h2>
-
-          <p>
-            Get reliable and professional help for your moving, packing and
-            shifting needs. We make your move simple, safe and stress-free.
-          </p>
-
-          <div className="service-list">
-            <div className="service-item">
-              <span>✓</span>
-              <p>Transport</p>
-            </div>
-
-            <div className="service-item">
-              <span>✓</span>
-              <p>Workers</p>
-            </div>
-
-            <div className="service-item">
-              <span>✓</span>
-              <p>Packing Services</p>
-            </div>
-
-            <div className="service-item">
-              <span>✓</span>
-              <p>Loading & Unloading</p>
-            </div>
-
-            <div className="service-item">
-              <span>✓</span>
-              <p>Full Moving Package</p>
-            </div>
-          </div>
-
-          <a href="#" className="service-btn">
-            View Home Services →
-          </a>
-        </div>
-        <div className="service-image">
-          <img
-            src="https://static.vecteezy.com/system/resources/thumbnails/016/798/947/small_2x/business-service-online-digital-technology-businessman-touching-digital-globe-hologram-quality-business-relationship-customer-service-advice-and-support-technology-robot-assistance-online-services-photo.jpg"
-            alt="Moving and Shifting Service"
-          />
-        </div>
-      </section>
 
       <section className="services-detail-section">
         <div className="services-detail-content">

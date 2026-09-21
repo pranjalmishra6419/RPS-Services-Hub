@@ -67,13 +67,13 @@ const Header = () => {
       
         
             <NavLink
-          to="/loging"
+          to="/booknow"
           className={({ isActive }) =>
             `servicehub-link ${isActive ? "servicehub-active" : ""}`
           }
         >
           <div className="servicehub-login btn">
-            Login 
+            Book Service
           </div>
         </NavLink>
        

@@ -1,117 +1,380 @@
-import React from 'react'
-import './CSS/Blog.css'
-import Header from '../Components/Header';
-import Footer from '../Components/Footer';
+import React, { useState } from "react";
+import "../Pages/CSS/Blog.css";
+import Header from '../Components/Header'
+import Footer from '../Components/Footer'
+import {
+  FaWrench,
+  FaBolt,
+  FaCar,
+  FaLaptop,
+  FaBroom,
+  FaBoxOpen,
+} from "react-icons/fa";
 
-const Blog = () => {
-    
-const blog = [
+const departments = [
   {
-    image:
-      "/image/raf1.jpg",
-    category: "HOME SERVICES",
-    title: "🔌 Electrician",
-    description:
-      "Electrician ghar aur office ki electrical problems ko solve karta hai Wiring, switch, socket, fan aur light installation electrician ke common kaam hain. Faulty wiring aur short circuit ki problem ko check karke repair kiya jata hai. New electrical points aur connections install karne mein bhi electrician help karta hai. Fan, light, switchboard aur other electrical items ko replace ya repair kiya ja sakta hai.Electrical leakage aur power-related problems ko identify karna bhi electrician ka important kaam hai.Electrician electrical safety ka bhi dhyan rakhta hai. Regular electrical checking se future problems ko reduce karne mein help mil sakti hai. Kisi bhi major electrical problem ke liye trained professional ki service lena better hota hai. Electrician ke saath apni electrical problems ke liye reliable home service paayein.",
+    name: "Plumbing Services",
+    icon: <FaWrench />,
+    image: "/image/p1.jpg",
+    services: [
+      "Tap & Faucet Repair",
+      "Bathroom Fitting",
+      "Water Leakage Repair",
+      "Toilet Repair & Installation",
+      "Drain & Pipe Blockage",
+      "Pipe Repair / Replacement",
+      "Water Tank Service",
+      "Geyser Plumbing Connection",
+    ],
+    content: [
+      "Water leakage ko time par repair karna water wastage aur damage ko reduce karne me help karta hai.",
+      "Tap aur faucet ki continuous dripping common plumbing problem ho sakti hai.",
+      "Bathroom fittings ki proper installation se leakage aur fitting-related issues kam ho sakte hain.",
+      "Blocked drain ki timely cleaning se overflow aur bad smell ko control kiya ja sakta hai.",
+      "Toilet blockage ya fitting problem ke liye proper plumbing inspection zaroori hota hai.",
+      "Damaged pipes ko condition ke according repair ya replace karna chahiye.",
+      "Water tank ki regular service plumbing system ko properly maintain karne me help karti hai.",
+      "Geyser ke water inlet aur outlet connection ki proper fitting important hoti hai.",
+      "Low water pressure pipe blockage ya fitting problem ki wajah se ho sakta hai.",
+      "Service Hub par common plumbing problems ke liye convenient home service arrange ki ja sakti hai.",
+    ],
   },
+
   {
-    image:
-      "/image/raf2.jpg",
-    category: "HOME SERVICES",
-    title: "🔧 Plumber ?",
-    description:
-      "Plumber ghar aur office ki water aur plumbing problems ko solve karta hai. Nalki, pipe leakage, tap aur shower ki repair plumber ka common kaam hai. Blocked drain aur water drainage ki problems ko bhi plumber fix karta hai. Water tank aur pipeline ki fitting aur maintenance mein plumber help karta hai. Bathroom aur kitchen mein new taps, pipes aur fittings install ki ja sakti hain.   Leakage wali pipes ko repair ya replace karna bhi plumber ka important kaam hai. Low water pressure aur water flow ki problems ko check kiya ja sakta hai.Regular plumbing maintenance se bade leakage aur blockage ko avoid karne mein help milti hai.           Kisi major plumbing problem ke liye trained professional ki service lena better hota hai.",
+    name: "Electrical Services",
+    icon: <FaBolt />,
+    image: "/image/e1.jpg",
+    services: [
+      "Light & Fan Services",
+      "Switch & Socket Repair",
+      "Wiring & Power",
+      "MCB & Fuse Services",
+      "Inverter & Battery",
+      "Electrical Appliance Installation",
+      "Electrical Inspection",
+    ],
+    content: [
+      "Ghar ki electrical wiring ko safe aur proper condition me rakhna bahut zaroori hai.",
+      "Flickering light ya baar-baar fuse hona electrical problem ka signal ho sakta hai.",
+      "Damaged switch aur socket ko time par repair karna safety ke liye important hai.",
+      "Loose wiring se short circuit aur overheating ka risk badh sakta hai.",
+      "MCB ghar ke electrical system ko overload aur short circuit se protect karne me help karta hai.",
+      "Fan ki unusual noise ya slow speed ko ignore nahi karna chahiye.",
+      "Inverter aur battery ki regular checking se backup performance better reh sakti hai.",
+      "Extra electrical load ke liye proper wiring aur suitable power connection zaroori hai.",
+      "Electrical appliances ki installation proper connection aur safety ke saath karni chahiye.",
+      "Service Hub par common electrical problems ke liye professional home service arrange ki ja sakti hai.",
+    ],
   },
+
   {
-    image: "/image/raf3.jpg",
-    category: "Virtual Reality",
-    title: "🔧 Appliance Repair",
-    description:
-      "Appliance Repair service ghar ke electronic aur electrical appliances ki problems ko solve karti hai. Washing machine, refrigerator, microwave, cooler aur other appliances ki repairing ki jaati hai. Technician appliance ko check karke problem ka main reason identify karta hai. Faulty parts ko repair ya zarurat padne par replace kiya ja sakta hai. Washing machine mein water, spinning ya noise ki problem ko fix kiya ja sakta hai. Refrigerator ki cooling aur unusual noise jaisi problems ko bhi check kiya jata hai. Microwave aur other kitchen appliances ki electrical problems ko safely repair kiya ja sakta hai. Regular maintenance se appliances ki performance better maintain karne mein help milti hai. Kisi major electrical appliance problem ke liye trained technician ki service lena better hota hai.",
+    name: "Vehicle Services",
+    icon: <FaCar />,
+    image: "/image/v1.jpg",
+    services: [
+      "Clutch & Brake Repair",
+      "Engine Repair",
+      "Tyre & Wheel Service",
+      "Vehicle Washing",
+      "Battery Service",
+      "Roadside Assistance",
+    ],
+    content: [
+      "Vehicle ki regular servicing smooth aur reliable driving ke liye important hoti hai.",
+      "Brake se unusual sound aaye to brake system ki checking karani chahiye.",
+      "Clutch me excessive hardness ya slipping driving experience ko affect kar sakti hai.",
+      "Engine ki unusual noise ya vibration ko ignore nahi karna chahiye.",
+      "Proper tyre pressure se handling aur tyre life maintain karne me help milti hai.",
+      "Uneven tyre wear wheel alignment ya suspension issue ka indication ho sakta hai.",
+      "Battery ki condition check karna starting problems ko reduce karne me useful hota hai.",
+      "Regular vehicle washing se dust aur dirt accumulation ko control kiya ja sakta hai.",
+      "Emergency roadside assistance breakdown ke time quick support provide kar sakti hai.",
+      "Timely maintenance se vehicle ke important components ki condition better maintain ki ja sakti hai.",
+    ],
   },
 
-  // {
-  //   image: "/images/p uniqe.jpg",
-  //   category: "HOME SERVICES",
-  //   title: "🔧 Plumber ?",
-  //   description:
-  //     "Plumber ghar aur office ki water aur plumbing problems ko solve karta hai. Nalki, pipe leakage, tap aur shower ki repair plumber ka common kaam hai. Blocked drain aur water drainage ki problems ko bhi plumber fix karta hai. Water tank aur pipeline ki fitting aur maintenance mein plumber help karta hai. Bathroom aur kitchen mein new taps, pipes aur fittings install ki ja sakti hain.   Leakage wali pipes ko repair ya replace karna bhi plumber ka important kaam hai. Low water pressure aur water flow ki problems ko check kiya ja sakta hai.Regular plumbing maintenance se bade leakage aur blockage ko avoid karne mein help milti hai.           Kisi major plumbing problem ke liye trained professional ki service lena better hota hai.",
-  // },
-
-   {
-    image: "/image/raf4.jpg",
-    category: "HOME SERVICES",
-    title: "🚗 Vehicle Service (Car/Bike) ?",
-    description:
-      " Vehicle service mein car aur bike ki regular servicing aur maintenance ki jaati hai. Engine oil, brake, tyre, battery aur other important parts ko check kiya jata hai. Vehicle mein unusual noise, starting problem ya performance issue ko diagnose kiya ja sakta hai. Brake aur clutch ki condition check karke zarurat ke according repair ki jaati hai. Tyre pressure aur wheel-related problems ko bhi check kiya jata hai. Battery aur electrical system ki checking bhi vehicle service ka important part hai.         Regular servicing se vehicle ki performance aur maintenance better rakhne mein help milti hai. Car ya bike ke faulty parts ko repair ya replace kiya ja sakta hai. Experienced technician vehicle ki problem ko identify karke proper service provide karta hai",
+  {
+    name: "Tech Services",
+    icon: <FaLaptop />,
+    image: "/image/t1.jpg",
+    services: [
+      "Computer & Laptop Repair",
+      "Software Installation",
+      "Wi-Fi & Router Setup",
+      "CCTV Installation",
+      "Printer Setup & Repair",
+      "Data Backup & Transfer",
+    ],
+    content: [
+      "Laptop slow hone ke peeche storage, software ya system-related reasons ho sakte hain.",
+      "Computer aur laptop ki regular checking performance problems ko identify karne me help karti hai.",
+      "Wi-Fi slow ya frequently disconnect hone par router aur network settings check ki ja sakti hain.",
+      "Software installation hamesha trusted aur compatible sources se karna important hai.",
+      "CCTV installation ke liye proper camera placement aur connection zaroori hota hai.",
+      "Printer me paper jam ya connectivity issue ke liye technical inspection ki requirement ho sakti hai.",
+      "Important files ka backup technical problems ke time data loss ka risk reduce karta hai.",
+      "Laptop overheating ko ignore karne se performance par effect pad sakta hai.",
+      "Regular software updates system security aur compatibility maintain karne me help karte hain.",
+      "Service Hub daily technology-related problems ke liye convenient technical support provide karta hai.",
+    ],
   },
 
-   {
-    image: "/image/raf5.jpg",
-    category: "HOME SERVICES",
-    title: "📦 Moving & Shifting Service?",
-    description:
-      "Moving & Shifting service ghar ya office ko ek location se doosri location par shift karne mein help karti hai. Is service mein packing, loading, transportation aur unloading jaise kaam include ho sakte hain. Professional team furniture aur other saman ko carefully pack karti hai. Fragile items jaise glass, electronics aur kitchen items ko extra care ke saath handle kiya jata hai.   Heavy furniture ko safely load aur unload karne mein trained workers help karte hain. Transportation ke liye suitable vehicle ka use kiya jata hai. Proper packing se saman ko damage hone ke risk ko kam karne mein help milti hai. Home shifting ke saath office aur small business shifting mein bhi assistance mil sakti hai. Shifting se pehle timing, distance aur service charges ko confirm karna useful hota hai",
+  {
+    name: "Cleaning Services",
+    icon: <FaBroom />,
+    image: "/image/clean-home.jpg",
+    services: [
+      "Home Cleaning",
+      "Bathroom Cleaning",
+      "Kitchen Cleaning",
+      "Deep Home Cleaning",
+      "Sofa Cleaning",
+      "Window Cleaning",
+      "Office Cleaning",
+      "Move In / Move Out Cleaning",
+    ],
+    content: [
+      "Regular home cleaning se dust aur dirt accumulation ko control karne me help milti hai.",
+      "Bathroom ki deep cleaning tiles, floor aur commonly used surfaces ko clean rakhne me useful hai.",
+      "Kitchen cleaning se grease, dust aur surface dirt ko remove karne me help milti hai.",
+      "Deep cleaning ghar ke multiple areas ki detailed cleaning provide karti hai.",
+      "Sofa cleaning upholstered furniture par accumulated dust aur dirt ko remove karne me help karti hai.",
+      "Window aur glass cleaning se visible dirt aur marks ko clean kiya ja sakta hai.",
+      "Office cleaning workspace ko organized aur clean maintain karne me useful hoti hai.",
+      "Move-in aur move-out cleaning shifting ke time cleaning process ko convenient bana sakti hai.",
+      "Regular cleaning se commonly used surfaces ko better condition me maintain kiya ja sakta hai.",
+      "Service Hub par different cleaning requirements ke according suitable service choose ki ja sakti hai.",
+    ],
   },
 
-   {
-    image: "/image/raf6.jpg",
-    category: "HOME SERVICES",
-    title: "💻 Tech Services ?",
-    description:
-      "Tech Services mein computer, laptop aur other digital devices se related problems ka solution diya jata hai. Laptop ya computer slow hone, hang hone aur software problems ko check kiya ja sakta hai. Windows, software aur required applications ki installation aur setup mein help milti hai. Internet, Wi-Fi aur basic network connectivity problems ko troubleshoot kiya ja sakta hai.        Printer, scanner aur other computer accessories ki basic problems bhi check ki ja sakti hain. Data backup, system setup aur basic device maintenance mein professional assistance milti hai. Virus ya unwanted software ki problems ko identify karke system ko secure rakhne mein help ki ja sakti hai. New computer ya laptop setup karne mein bhi technician assistance provide kar sakta hai.  Regular maintenance se devices ki performance ko better maintain karne mein help milti hai.",
+  {
+    name: "Moving & Shifting",
+    icon: <FaBoxOpen />,
+    image: "/image/move-home.jpg",
+    services: [
+      "Home Shifting",
+      "Office Shifting",
+      "Transport Service",
+      "Packing & Unpacking",
+      "Furniture Moving",
+      "Moving Workers",
+      "Complete Shifting Support",
+    ],
+    content: [
+      "Ghar shifting se pehle proper planning karne se unnecessary stress ko kam kiya ja sakta hai.",
+      "Important samaan ko category-wise pack karna shifting process ko organized banata hai.",
+      "Fragile items ke liye proper wrapping aur protective packing use karna important hai.",
+      "Furniture shifting ke liye experienced workers damage risk ko reduce karne me help kar sakte hain.",
+      "Boxes par item name likhne se new location par samaan arrange karna easy hota hai.",
+      "Heavy furniture ke liye suitable transport vehicle select karna zaroori hai.",
+      "Electronics ko shift karte waqt proper protection aur careful handling ki requirement hoti hai.",
+      "Complete shifting service me transport aur workers dono available hone se process convenient ho sakta hai.",
+      "Moving ke din important documents aur personal items ko separately carry karna better hota hai.",
+      "Service Hub shifting ko planned, organized aur convenient banane ke liye different service options provide karta hai.",
+    ],
   },
-
-  //  {
-  //   image: "/images/pestcontrol icon.jpg",
-  //   category: "HOME SERVICES",
-  //   title: "🐜 Pest Control Service ?",
-  //   description:
-  //     "Pest Control service ghar aur office ko unwanted pests se protect karne mein help karti hai. Cockroach, ants, termites, mosquitoes aur other pests ki problem ko identify kiya jata hai. Professional team affected areas ko check karke suitable treatment suggest karti hai. Kitchen, bathroom, bedroom aur other areas mein pest problem ko control kiya ja sakta hai.     Termite treatment se furniture aur wooden items ko protect karne mein help milti hai. Mosquito aur insects ki problem ko reduce karne ke liye proper treatment kiya jata hai. Regular pest control se unwanted pests ki problem ko manage karne mein help mil sakti hai.Treatment ke dauran safety instructions ko follow karna important hota hai. Professional pest control service ghar ko clean aur comfortable maintain karne mein help karti hai.",
-  // },
-
-
-
 ];
+const Blog = () => {
+
+  // Kis card ka Read More open hai
+  const [expandedCard, setExpandedCard] = useState(null);
+
+  const handleReadMore = (index) => {
+    if (expandedCard === index) {
+      setExpandedCard(null);
+    } else {
+      setExpandedCard(index);
+    }
+  };
+
   return (
     <>
     <Header/>
     <div className="blog-page">
-      {/* Blog Section */}
-      <section className="blog-section">
 
-        <h2 className="section-title">
-          BLOGS
-        </h2>
+      {/* Hero Section */}
+      <section className="blog-hero">
+        <img
+          src="/image/blog.png"
+          alt="Service Hub Home Services"
+        />
 
-        <div className="blog-list">
-
-          {blog.map((blog, index) => (
-            <article className="blog-card" key={index}>
-
-              {/* Image */}
-              <div className="blog-image-box">
-                <img src={blog.image} alt={blog.title} />
-              </div>
-
-              {/* Content */}
-              <div className="blog-content">
-
-                <h1>{blog.title}</h1>
-
-                <p>{blog.description}</p>
-              </div>
-
-            </article>
-          ))}
-
+        <div className="hero-overlay">
+          <div className="service-logo"></div>
         </div>
       </section>
 
-    </div>
-    <Footer/>
-    </>
-  )
-}
 
-export default Blog
+      {/* Introduction */}
+      <section className="blog-intro">
+        <span className="small-heading">SERVICE HUB</span>
+
+        <h2>Helpful Tips For Your Everyday Services</h2>
+
+        <p>
+          Service Hub ka aim sirf service provide karna nahi hai, balki
+          customers ko apni daily problems ke baare me useful information
+          dena bhi hai. Yahan aapko electrician, plumbing, appliance,
+          vehicle, shifting aur technology services se related simple
+          aur practical information milegi.
+        </p>
+      </section>
+
+
+      {/* Department Cards */}
+      <section className="department-container">
+
+        {departments.map((department, index) => {
+
+          const isExpanded = expandedCard === index;
+
+          return (
+            <article
+              className={`department-card ${
+                isExpanded ? "card-expanded" : ""
+              }`}
+              key={department.name}
+            >
+
+              {/* Image */}
+              <div className="department-image">
+
+                <img
+                  src={department.image}
+                  alt={department.name}
+                />
+
+                <div className="department-badge">
+                  {department.icon}
+                </div>
+
+              </div>
+
+
+              {/* Content */}
+              <div className="department-content">
+
+                {/* Title */}
+                <div className="department-title">
+
+                  <div>
+                    <span>Service Department</span>
+
+                    <h2>{department.name}</h2>
+                  </div>
+
+                  <div className="card-logo">
+                    Service <b>Hub</b>
+                  </div>
+
+                </div>
+
+
+                {/* Services */}
+                <div className="services-section">
+
+                  <h3>Our Services</h3>
+
+                  <div className="service-list">
+
+                    {department.services.map((service) => (
+                      <span key={service}>
+                        ✓ {service}
+                      </span>
+                    ))}
+
+                  </div>
+
+                </div>
+
+
+                {/* Blog Content */}
+                <div className="blog-content">
+
+                  <h3>Useful Tips & Information</h3>
+
+                  <div className="blog-lines">
+
+                    {department.content.map((line, i) => {
+
+                      /*
+                        Closed:
+                        Sirf first number 01 dikhega
+
+                        Open:
+                        Saare 10 numbers dikhenge
+                      */
+                      if (!isExpanded && i !== 0) {
+                        return null;
+                      }
+
+                      return (
+                        <div
+                          className="blog-line"
+                          key={i}
+                        >
+
+                          <span className="line-number">
+                            {String(i + 1).padStart(2, "0")}
+                          </span>
+
+                          <p>{line}</p>
+
+                        </div>
+                      );
+
+                    })}
+
+                  </div>
+
+
+                  {/* Read More Button */}
+                  {department.content.length > 1 && (
+
+                    <button
+                      className="read-more-btn"
+                      onClick={() => handleReadMore(index)}
+                    >
+
+                      {isExpanded ? "Read Less ↑" : "Read More →"}
+
+                    </button>
+
+                  )}
+
+                </div>
+
+              </div>
+
+            </article>
+          );
+        })}
+
+      </section>
+
+
+      {/* Bottom CTA */}
+      <section className="blog-bottom">
+
+        <div className="bottom-logo">
+          Service <b>Hub</b>
+        </div>
+
+        <h2>
+          One Platform For Your Everyday Service Needs
+        </h2>
+
+        <p>
+          Electrician se lekar Tech Services tak, Service Hub ka goal hai
+          ki customers ko convenient aur reliable service experience mile.
+        </p>
+
+      </section>
+      <Footer/>
+
+    </div>
+    </>
+  );
+};
+
+export default Blog;

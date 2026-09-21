@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { NavLink } from "react-router-dom"; 
 import aos from 'aos';
 import {
   FiArrowRight,
@@ -67,11 +68,11 @@ const Home = () => {
             and everyday service needs — all in one place.
           </p>
 
-          <div className="careflow-hero-buttons">
+          <div className="careflow-hero-buttons"><NavLink to="/services">
             <button className="careflow-primary-btn">
               Explore Services <FiArrowRight />
-            </button>
-
+            </button></NavLink>
+            
             <button className="careflow-secondary-btn">
               Become a Provider
             </button>
@@ -140,11 +141,11 @@ const Home = () => {
               <span>Reliable Customer Support</span>
             </div>
           </div>
-
+          <NavLink to="/about">
           <button className="careflow-primary-btn">
-            Learn More <FiArrowRight />
+            Read More <FiArrowRight />
           </button>
-
+          </NavLink>
         </div>
       </section>
 

@@ -49,7 +49,7 @@ function Icon({ name, className = "icon" }) {
 /*  BOOKING SECTION                                                    */
 /* ------------------------------------------------------------------ */
 
-export default function BookingSection({ phone = "+91 90000 00000" }) {
+export default function BookingSection({ phone = "+91 7388663365" }) {
   const [preset, setPreset] = useState(CATEGORIES[0].name);
   const [sent, setSent] = useState(false);
   const [form, setForm] = useState({ name: "", phone: "", city: CITIES[0], when: "Today" });

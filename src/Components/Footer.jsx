@@ -1,77 +1,111 @@
-import React from 'react'
-import '../Components/Css/Footer.css'
+import React from "react";
+import { NavLink } from "react-router-dom";
+import "../Components/Css/Footer.css";
+import { FaFacebook } from "react-icons/fa";
+import { IoLogoLinkedin } from "react-icons/io";
+import { FaTwitter } from "react-icons/fa";
+import { FaInstagramSquare } from "react-icons/fa";
+import { FaLocationDot } from "react-icons/fa6";
+import { FaPhone } from "react-icons/fa6";
+import { MdEmail } from "react-icons/md";
 
 const Footer = () => {
   return (
-    <>
-    <footer className="cf-footer">
+    <footer className="footer">
+      <div className="footer-container">
+        <div className="footer-brand">
+          <NavLink to="/" className="footer-logo">
+            <span>Services</span>Hub
+          </NavLink>
 
-    <div className="cf-footer-main">
-
-        
-
-        <div className="cf-footer-column">
-            <h3>Our Services</h3>
-
-            <a href="#">Home Services</a>
-            <a href="#">Vehicle Services</a>
-            <a href="#">Tech Services</a>
-            <a href="#">Repair Services</a>
-            <a href="#">Cleaning Services</a>
-            <a href="#">Personal Care</a>
+          <p className="footer-description">
+  Service Hub is your convenient platform for booking everyday services.
+  Find the right service, choose a provider and get the service at your
+  location with a simple and reliable booking experience.
+</p>
+        </div>
+        <div className="footer-column">
+          <h3>Our Services</h3>
+          <NavLink to="/services/home">Home Services</NavLink>
+          <NavLink to="/services/vehicle">Vehicle Services</NavLink>
+          <NavLink to="/services/tech">Tech Services</NavLink>
+          <NavLink to="/services/repair">Repair Services</NavLink>
+          <NavLink to="/services/cleaning">Cleaning Services</NavLink>
+          <NavLink to="/services/personal-care">Personal Care</NavLink>
         </div>
 
-        <div className="cf-footer-column">
-            <h3>Quick Links</h3>
+        <div className="footer-column">
+          <h3>Quick Links</h3>
 
-            <a href="#">Home</a>
-            <a href="#">About Us</a>
-            <a href="#">All Services</a>
-            <a href="#">How It Works</a>
-            <a href="#">Calculators</a>
-            <a href="#">Contact Us</a>
+          <NavLink to="/">Home</NavLink>
+
+          <NavLink to="/about">About Us</NavLink>
+
+          <NavLink to="/services">All Services</NavLink>
+
+          <NavLink to="/loging">Login</NavLink>
+
+          <NavLink to="/createaccount">Signup</NavLink>
+
+          <NavLink to="/contact">Contact Us</NavLink>
+        </div>
+        <div className="footer-column footer-contact">
+          <h3>Get In Touch</h3>
+
+          <a href="#">
+            <FaLocationDot /> Lucknow, Uttar Pradesh
+          </a>
+
+          <a href="tel:+919876543210">
+            <FaPhone /> +91 98765 43210
+          </a>
+
+          <a href="mailto:support@serviceshub.com">
+            <MdEmail /> support@serviceshub.com
+          </a>
+          <div className="footer-social">
+            <a href="https://www.facebook.com/">
+              <FaFacebook size={30} className="icons-footer-social" />
+            </a>
+            <a href="https://www.linkedin.com/">
+              <IoLogoLinkedin size={30} className="icons-footer-social" />
+            </a>
+            <a href="http://www.twitter.com/">
+              <FaTwitter size={30} className="icons-footer-social" />
+            </a>
+            <a href="https://www.instagram.com/">
+              <FaInstagramSquare size={30} className="icons-footer-social" />
+            </a>
+          </div>
         </div>
 
+        {/* <div className="footer-column">
+          <div className="map-container">
+            <iframe
+              src="https://www.google.com/maps?q=Government%20Polytechnic%20Rajgarh%20Mirzapur&output=embed"
+              width="100%"
+              height="250"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Service Hub Location"
+            ></iframe>
+          </div>
+        </div> */}
+      </div>
 
-        <div className="cf-footer-column">
-            <h3>For Providers</h3>
+      <div className="footer-bottom">
+        <p>© 2026 CareFlow. All Rights Reserved.</p>
 
-            <a href="#">Become a Provider</a>
-            <a href="#">Provider Login</a>
-            <a href="#">Provider Benefits</a>
-            <a href="#">How It Works</a>
-            <a href="#">Provider Support</a>
+        <div className="footer-bottom-links">
+          <NavLink to="/privacy-policy">Privacy Policy</NavLink>
+
+          <NavLink to="/terms">Terms & Conditions</NavLink>
         </div>
+      </div>
+    </footer>
+  );
+};
 
-
-        <div className="cf-footer-column cf-footer-contact">
-            <h3>Get In Touch</h3>
-
-            <p>📍 Lucknow, Uttar Pradesh</p>
-            <p>📞 +91 98765 43210</p>
-            <p>✉️ support@careflow.com</p>
-          <div className="cf-footer-social">
-                <a href="#">f</a>
-                <a href="#">in</a>
-                <a href="#">𝕏</a>
-                <a href="#">◎</a>
-            </div>
-            
-        </div>
-        <div className="cf-footer-brand">
-            <div className="footer-map">
-                <iframe src="https://www.google.com/maps/embed?pb=YOUR_MAP_CODE" />
-            </div>
-        </div>
-
-    </div>
-
-    
-    
-
-</footer>
-    </>
-  )
-}
-
-export default Footer
+export default Footer;

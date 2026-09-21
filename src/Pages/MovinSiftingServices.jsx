@@ -7,15 +7,50 @@ import SubServicesType from '../Components/SubServicesType'
 
 const MovinSiftingServices = () => {
 
-  const plumbingservices = [
-    {image:"/image/e1.jpg", spantext:"Plumbing", heading:"Plumbing Services", text:"lorem jhefsu fsbfhj  fs kf fsd sf dsbf fs  fusgfhdsbj fusb", Rupees:"1000"},
-    {image:"/image/e2.jpg", spantext:"Plumbing", heading:"Plumbing Services", text:"lorem jhefsu fsbfhj  fs kf fsd sf dsbf fs  fusgfhdsbj fusb", Rupees:"1000"},
-    {image:"/image/e3.jpg", spantext:"Plumbing", heading:"Plumbing Services", text:"lorem jhefsu fsbfhj  fs kf fsd sf dsbf fs  fusgfhdsbj fusb", Rupees:"1000"},
-    {image:"/image/e3.jpg", spantext:"Plumbing", heading:"Plumbing Services", text:"lorem jhefsu fsbfhj  fs kf fsd sf dsbf fs  fusgfhdsbj fusb", Rupees:"1000"},
-    {image:"/image/e4.jpg", spantext:"Plumbing", heading:"Plumbing Services", text:"lorem jhefsu fsbfhj  fs kf fsd sf dsbf fs  fusgfhdsbj fusb", Rupees:"1000"},
-    {image:"/image/e6.jpg", spantext:"Plumbing", heading:"Plumbing Services", text:"lorem jhefsu fsbfhj  fs kf fsd sf dsbf fs  fusgfhdsbj fusb", Rupees:"1000"},
-    {image:"/image/e4.jpg", spantext:"Plumbing", heading:"Plumbing Services", text:"lorem jhefsu fsbfhj  fs kf fsd sf dsbf fs  fusgfhdsbj fusb", Rupees:"1000"},
-  ]
+  const movinsiftingservices = [
+  {
+    image: "/image/HomeShifting.jpg",
+    spantext: "MOVING",
+    heading: "Home Shifting",
+    text: "Complete support for shifting household items safely from one location to another.",
+    Rupees: "1499"
+  },
+  {
+    image: "/image/OfficeShifting.jpg",
+    spantext: "MOVING",
+    heading: "Office Shifting",
+    text: "Organized shifting support for office furniture, equipment and other workplace items.",
+    Rupees: "1999"
+  },
+  {
+    image: "/image/TransportService.jpg",
+    spantext: "TRANSPORT",
+    heading: "Transport Service",
+    text: "Vehicle-based transport support for moving furniture, boxes and household belongings.",
+    Rupees: "999"
+  },
+  {
+    image: "/image/PackingUnpacking.jpg",
+    spantext: "PACKING",
+    heading: "Packing & Unpacking",
+    text: "Careful packing and unpacking of household items to make your move easier and safer.",
+    Rupees: "799"
+  },
+  {
+    image: "/image/FurnitureMoving.jpg",
+    spantext: "FURNITURE",
+    heading: "Furniture Moving",
+    text: "Loading, carrying and arranging furniture during home or office shifting.",
+    Rupees: "699"
+  },
+  {
+    image: "/image/MovingWorkers.jpg",
+    spantext: "LABOUR",
+    heading: "Moving Workers",
+    text: "Workers to help with loading, unloading and handling items during shifting.",
+    Rupees: "499"
+  }
+];
 
 
   return (
@@ -27,7 +62,7 @@ const MovinSiftingServices = () => {
       <img src="image/submovsif.jpg" alt="" />
     </div>
     <div className='plumbing-types'>
-      {plumbingservices.map((item, index) => (
+      {movinsiftingservices.map((item, index) => (
           <SubServicesType
               key={index}
               image={item.image}

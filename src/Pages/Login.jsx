@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../Pages/CSS/Login.css";
 import Header from '../Components/Header'
+import Footer from "../Components/Footer";
 
 function Login() {
   const [showPassword, setShowPassword] = useState(false);
@@ -163,7 +164,7 @@ function Login() {
             {/* SIGN UP */}
             <div className="signup-text">
               Don't have an account?
-              <a href="#signup"> Create Account</a>
+              <a href="/createaccount"> Create Account</a>
             </div>
 
           </form>
@@ -173,6 +174,7 @@ function Login() {
       </div>
 
     </section>
+    <Footer/>
     </>
   );
 }

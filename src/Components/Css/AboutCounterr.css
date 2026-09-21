@@ -1,20 +1,10 @@
-/* ------------------------------------------------------------------ */
-/*  COLORS — inhe badal kar poori theme change ho jayegi                */
-/* ------------------------------------------------------------------ */
-
-:root {
-  --stats-bg: #e5e8ec;
-  --stats-number: #35ac23;
-  --stats-label: #000000;
-  --stats-pattern-dot: rgba(255, 255, 255, 0.12);
-}
-
-/* ------------------------------------------------------------------ */
-/*  SECTION                                                            */
-/* ------------------------------------------------------------------ */
-
 .stats-section {
-  background: var(--stats-bg);
+  width: 100%;
+  min-height: 150px;
+  background-image: url("/image/aboutcounter4.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   padding: 3.5rem 1.5rem;
 }
 
@@ -22,20 +12,10 @@
   max-width: 72rem;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 2.5rem 1.5rem;
   text-align: center;
 }
-
-@media (min-width: 768px) {
-  .stats-section__grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-/* ------------------------------------------------------------------ */
-/*  SINGLE STAT                                                        */
-/* ------------------------------------------------------------------ */
 
 .stat {
   display: flex;
@@ -48,17 +28,10 @@
   font-size: 2.75rem;
   font-weight: 700;
   line-height: 1.1;
-  color: var(--stats-number);
-  font-variant-numeric: tabular-nums; /* digits jump na karein width me */
+  color: #16A34A;
+  font-variant-numeric: tabular-nums;
 }
 
-@media (min-width: 768px) {
-  .stat__number {
-    font-size: 3.25rem;
-  }
-}
-
-/* dotted-pattern background jo label ke peeche dikhta hai */
 .stat__label-wrap {
   margin-top: 0.75rem;
   position: relative;
@@ -70,7 +43,6 @@
   content: "";
   position: absolute;
   inset: 0;
-  background-image: radial-gradient(var(--stats-pattern-dot) 1.2px, transparent 1.2px);
   background-size: 8px 8px;
   border-radius: 4px;
 }
@@ -80,6 +52,6 @@
   margin: 0;
   font-size: 1.0625rem;
   font-weight: 500;
-  color: var(--stats-label);
+  color: #000000;
   white-space: nowrap;
 }

@@ -19,7 +19,9 @@ import TechServices from './Pages/TechServices'
 import VehicleServices from './Pages/VehicleServices'
 import CleaningServices from './Pages/CleaningServices'
 import CtaServices from './Components/CtaServices'
+import BookNow from './Components/BookNow'
 import SubServicesType from './Components/SubServicesType'
+import CreateAccount from './Components/CreateAccount'
 
 const App = () => {
   return (
@@ -34,6 +36,8 @@ const App = () => {
             <Route path='/cta' element={<CtaServices/>} /> 
             <Route path='/sst' element={<SubServicesType/>} /> 
             <Route path='/contact' element={<Contact/>} /> 
+            <Route path='/booknow' element={<BookNow/>} />
+            <Route path='createaccount' element={<CreateAccount/>} />
 
             <Route path='/plumbingservices' element={<PlumbingServices/>}/>
             <Route path='/movinsiftingservices' element={<MovinSiftingServices/>}/>

@@ -30,7 +30,7 @@ const SubServicesType = ({image, spantext, heading, text, Rupees }) => {
               </p>
               <div class="cleaning-service-bottom">
                 <strong>Starting from ₹{Rupees}</strong>
-                <a href="#">Book Now</a>
+                <a href="/booknow">Book Now</a>
               </div>
             </div>
           </div>

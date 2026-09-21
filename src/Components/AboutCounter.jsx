@@ -8,11 +8,7 @@ const STATS = [
   { end: 24, suffix: "/7", label: "Service" },
 ];
 
-const DURATION = 1600; // ms — poori animation kitni der chalegi
-
-/* ------------------------------------------------------------------ */
-/*  SINGLE COUNTER                                                     */
-/* ------------------------------------------------------------------ */
+const DURATION = 1600; 
 
 function Counter({ end, suffix, label, start }) {
   const [value, setValue] = useState(0);

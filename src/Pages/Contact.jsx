@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import "../Pages/CSS/Contact.css";
+import Footer from "../Components/Footer";
+import Header from "../Components/Header";
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -27,6 +29,8 @@ function Contact() {
   };
 
   return (
+    <>
+    <Header/>
     <section className="contact-page">
 
       <div className="contact-wrapper">
@@ -233,6 +237,8 @@ function Contact() {
       </div>
 
     </section>
+    <Footer/>
+    </>
   );
 }
 

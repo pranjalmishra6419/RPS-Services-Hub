@@ -71,7 +71,7 @@ const ServiceCountPages = () => {
     
                   <p>{service.text}</p>
     
-                  <a href="#contact">
+                  <a href="/services">
                     Explore Service <FiArrowRight />
                   </a>
     
